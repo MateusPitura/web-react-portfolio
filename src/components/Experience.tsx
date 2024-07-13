@@ -2,7 +2,7 @@ import JobCard from '../components/JobCard'
 
 function Experience() {
     return (
-        <div className='flex w-full bg-[#100e07] min-h-[500px] justify-center'>
+        <div className='flex w-full bg-[#0a0a0a] min-h-[500px] justify-center'>
             <div className='justify-center'>
                 <JobCard
                     company='HURCG'
@@ -34,6 +34,15 @@ function Experience() {
                     ]}
                     yearFrom={2024}
                 />
+                <div className='flex max-w-[450px] mb-5'>
+                    <div className="p-4">
+                        <div className='my-10 min-w-[75px]'/>
+                    </div>
+                    <div className='min-w-[20px] flex justify-center'>
+                        <div className='bg-gradient-to-b from-[#ffeeee] to-[#0a0a0a] min-heigth-[100px] w-[4px]'></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
     )

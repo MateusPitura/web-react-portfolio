@@ -9,7 +9,7 @@ function JobCard({ company, position, activities, yearFrom }: JobCardProperties)
     return (
         <div className='flex max-w-[450px]'>
             <div className="p-4">
-                <div className='my-5 text-[32px] text-[#969080]'>{yearFrom}</div>
+                <div className='my-5 text-[32px] text-[#969080] min-w-[75px]'>{yearFrom}</div>
             </div>
             <div className='min-w-[20px] flex justify-center'>
                 <div className='bg-[#fff9ee] min-heigth-[100px] w-[4px]'>
