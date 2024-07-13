@@ -24,8 +24,8 @@ function JobCard({ company, position, activities, yearFrom }: JobCardProperties)
                 </div>
                 <div className='flex flex-wrap text-left bg-[#fff9ee] p-4 rounded-lg space-y-1'>
                     {
-                        activities.map(item => (
-                            <span className='text-[#1e1b13] text-[14px]'>{item}</span>
+                        activities.map((item, index) => (
+                            <span key={index} className='text-[#1e1b13] text-[14px]'>{item}</span>
                         ))
                     }
                 </div>

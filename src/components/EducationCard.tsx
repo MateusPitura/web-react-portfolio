@@ -22,8 +22,8 @@ function EducationCard({ activities, course, fromTo, school, isLarge }: Educatio
                             <span className='flex flex-1 justify-center text-[28px] text-[#363016]'>{course}</span>
                         </div>
                         <div className='flex flex-wrap space-y-2 text-start'>
-                            {activities?.map(item => (
-                                <span className='text-[16px] text-[#363016]'>{item}</span>
+                            {activities?.map((item, index) => (
+                                <span key={index} className='text-[16px] text-[#363016]'>{item}</span>
                             ))}
                         </div>
                     </div>
@@ -41,8 +41,8 @@ function EducationCard({ activities, course, fromTo, school, isLarge }: Educatio
                             <span className='flex flex-1 justify-center text-[24px] text-[#363016]'>{course}</span>
                         </div>
                         <div className='flex flex-wrap space-y-2 text-start'>
-                            {activities?.map(item => (
-                                <span className='text-[14px] text-[#363016]'>{item}</span>
+                            {activities?.map((item, index) => (
+                                <span key={index} className='text-[14px] text-[#363016]'>{item}</span>
                             ))}
                         </div>
                     </div>
