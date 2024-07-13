@@ -1,4 +1,5 @@
 import Badges from "./Badges";
+import { Badge } from "../types/Badge";
 
 interface CardProjectProperties {
     title: string;
@@ -6,10 +7,10 @@ interface CardProjectProperties {
     description: string;
     link: string;
     image: string;
-    badgesLinks: string[];
+    badges: Badge[];
 }
 
-function CardProject({ description, image, link, releaseYear, title, badgesLinks }: CardProjectProperties) {
+function CardProject({ description, image, link, releaseYear, title, badges }: CardProjectProperties) {
     return (
         <div className="flex justify-center">
             <div className='flex bg-[#FFF9EE] w-[900px] rounded-lg justify-center shadow-lg'>
@@ -32,7 +33,7 @@ function CardProject({ description, image, link, releaseYear, title, badgesLinks
                             </span>
                         </div>
                         <Badges
-                            links={badgesLinks}
+                            badges={badges}
                         />
                     </div>
                 </a>

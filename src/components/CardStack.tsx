@@ -1,14 +1,15 @@
 import { Divider } from '@mui/material'
 import { ReactNode } from 'react';
+import { Badge } from '../types/Badge';
 
 interface CardStackProperties {
     title: string | ReactNode;
-    stacksLink?: string[];
+    badges?: Badge[];
 }
 
-function CardStack({ title, stacksLink }: CardStackProperties) {
+function CardStack({ title, badges }: CardStackProperties) {
 
-    const stacksLastIndex = Number(stacksLink?.length) - 1;
+    const stacksLastIndex = Number(badges?.length) - 1;
 
     return (
         <div className='flex-1 flex-wrap min-w-[200px] p-5 m-5'>
@@ -16,10 +17,12 @@ function CardStack({ title, stacksLink }: CardStackProperties) {
                 <span className='text-[28px] text-[#1e1b13]'>{title}</span>
             </div>
             <div className='space-y-3'>
-                {stacksLink?.map((item, index) => (
-                    <div key={index}>
+                {badges?.map((item, index) => (
+                    <div key={item.id}>
                         <div className='flex justify-center flex-wrap pb-2'>
-                            <img className='rounded-lg'src={item} />
+                            <a className='hover:opacity-50' target='_self' href={`#${item.reference}`}>
+                                <img className='rounded-lg' src={item.imageUrl} />
+                            </a>
                         </div>
                         {index != stacksLastIndex && <Divider />}
                     </div>

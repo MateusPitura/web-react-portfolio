@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Badges from "./Badges";
+import { Badge } from "../types/Badge";
 
 interface EducationCardProperties {
     school: string;
@@ -7,10 +8,10 @@ interface EducationCardProperties {
     course: string | ReactNode;
     activities?: string[]
     isLarge?: boolean
-    badgesLinks: string[]
+    badges: Badge[]
 }
 
-function EducationCard({ activities, course, fromTo, school, isLarge, badgesLinks }: EducationCardProperties) {
+function EducationCard({ activities, course, fromTo, school, isLarge, badges }: EducationCardProperties) {
     return (
         isLarge ?
             <div className='flex w-full mx-2 min-h-[400px] justify-center' >
@@ -28,7 +29,7 @@ function EducationCard({ activities, course, fromTo, school, isLarge, badgesLink
                                 <span key={index} className='text-[16px] text-[#363016]'>{item}</span>
                             ))}
                             <Badges
-                                links={badgesLinks}
+                                badges={badges}
                             />
                         </div>
                     </div>
@@ -50,7 +51,7 @@ function EducationCard({ activities, course, fromTo, school, isLarge, badgesLink
                                 <span key={index} className='text-[14px] text-[#363016]'>{item}</span>
                             ))}
                             <Badges
-                                links={badgesLinks}
+                                badges={badges}
                             />
                         </div>
                     </div>

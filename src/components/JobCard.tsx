@@ -1,14 +1,15 @@
 import Badges from "./Badges";
+import { Badge } from "../types/Badge";
 
 interface JobCardProperties {
     company: string;
     position: string;
     activities: string[];
     yearFrom: number;
-    badgesLinks: string[];
+    badges: Badge[];
 }
 
-function JobCard({ company, position, activities, yearFrom, badgesLinks }: JobCardProperties) {
+function JobCard({ company, position, activities, yearFrom, badges }: JobCardProperties) {
     return (
         <div className='flex max-w-[450px]'>
             <div className="p-4">
@@ -32,7 +33,7 @@ function JobCard({ company, position, activities, yearFrom, badgesLinks }: JobCa
                         ))
                     }
                     <Badges
-                        links={badgesLinks}
+                        badges={badges}
                     />
                 </div>
             </div>
