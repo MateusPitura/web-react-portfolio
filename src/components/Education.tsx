@@ -14,7 +14,7 @@ function Education() {
                 ]}
                 isLarge
             />
-            <div className='flex w-full justify-center mb-20'>
+            <div className='flex w-full justify-center mb-10'>
                 <div className='flex flex-wrap max-w-[1000px] justify-center'>
                     <EducationCard
                         school='OneBitCode'

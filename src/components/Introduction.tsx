@@ -5,16 +5,16 @@ function Introduction() {
         <div className='flex flex-wrap p-5 pb-20 justify-center w-full'>
             <div className='flex-1 p-2 max-w-[500px] min-w-[300px]'>
                 <div className='border-[#FF5449] border-2 max-w-[100px] relative right-5 top-5'></div>
-                <img src={PhotoPerfilMe} className='max-w-full rounded-lg' />
+                <img src={PhotoPerfilMe} className='max-w-full rounded-lg shadow-sm' />
             </div>
             <div className='flex-1 p-2 justify-start text-left max-w-[500px] min-w-[300px]'>
                 <span className='text-[45px] text-[#FF5449]'>Full Stack.</span>
                 <div className='mb-10 relative right-0 md:right-16'>
                     <div className='mb-2'>
-                        <span className='p-2 bg-[#15130B] tracking-widest text-[57px] text-[#E8E2D4]'>MATEUS</span>
+                        <span className='p-2 bg-[#15130B] tracking-widest text-[57px] text-[#E8E2D4] shadow-lg'>MATEUS</span>
                     </div>
                     <div className='mt-2'>
-                        <span className='p-2 bg-[#15130B] tracking-widest text-[57px] text-[#E8E2D4]'>PITURA</span>
+                        <span className='p-2 bg-[#15130B] tracking-widest text-[57px] text-[#E8E2D4] shadow-lg'>PITURA</span>
                     </div>
                 </div>
                 <div>

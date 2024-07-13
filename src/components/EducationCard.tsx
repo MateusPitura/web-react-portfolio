@@ -12,7 +12,7 @@ function EducationCard({ activities, course, fromTo, school, isLarge }: Educatio
     return (
         isLarge ?
             <div className='flex w-full mx-2 min-h-[400px] justify-center' >
-                <div className='bg-[#d1c6a1] max-w-[600px] min-w-[400px] my-10 rounded-lg' >
+                <div className='bg-[#d1c6a1] max-w-[600px] min-w-[400px] my-10 rounded-lg shadow-md' >
                     <div className='p-5 space-y-5'>
                         <div className='flex w-full'>
                             <span className='flex flex-1 justify-start text-[24px] text-[#3c3930]'>{school}</span>
@@ -31,7 +31,7 @@ function EducationCard({ activities, course, fromTo, school, isLarge }: Educatio
             </div >
             :
             <div className='flex min-h-[200px] justify-center'>
-                <div className='bg-[#d1c6a1] w-[300px] m-2 rounded-lg' >
+                <div className='bg-[#d1c6a1] w-[300px] m-2 rounded-lg shadow-sm' >
                     <div className='p-3 space-y-5'>
                         <div className='flex w-full'>
                             <span className='flex flex-1 justify-start text-[16px] text-[#3c3930]'>{school}</span>

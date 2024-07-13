@@ -9,7 +9,7 @@ interface CardProjectProperties {
 function CardProject({ description, image, link, releaseYear, title }: CardProjectProperties) {
     return (
         <div className="flex justify-center">
-            <div className='flex bg-[#FFF9EE] w-[900px] rounded-lg justify-center'>
+            <div className='flex bg-[#FFF9EE] w-[900px] rounded-lg justify-center shadow-lg'>
                 <a className='hover:opacity-50 font-normal p-5' href={link} target='_blank'>
                     <div>
                         <div className='w-full'>
