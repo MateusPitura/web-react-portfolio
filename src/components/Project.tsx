@@ -25,6 +25,13 @@ function Project() {
                         releaseYear={2024}
                         link='https://github.com/MateusPitura/app-reactnative-vestibular'
                         description='📆 O Vest Info é um aplicativo desenvolvido em React Native projetado para fornecer uma forma conveniente para acompanhar notícias e datas de vestibulares'
+                        badgesLinks={[
+                            'https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB', //React Native
+                            'https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white', //CSS
+                            'https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white', // Android
+                            'https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white', //GIT
+                            'https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white', //Figma
+                        ]}
                     />
                     <CardProject
                         title="app-reactnative-combustivel"
@@ -32,6 +39,13 @@ function Project() {
                         description='🚗 Meu Carro Flex é um aplicativo desenvolvido em React Native que ajuda os usuários a determinar qual combustível é mais econômico para seus veículos'
                         link='https://github.com/MateusPitura/app-reactnative-combustivel'
                         image={AppReactNativeCombustivel}
+                        badgesLinks={[
+                            'https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB', //React Native
+                            'https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white', //CSS
+                            'https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white', // Android
+                            'https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white', //GIT
+                            'https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white', //Figma
+                        ]}
                     />
                     <CardProject
                         title="api-spring-vestibular"
@@ -39,6 +53,17 @@ function Project() {
                         description='☁️ Este projeto consiste em uma REST API desenvolvida em Spring Boot para suportar o aplicativo Vest Info'
                         link='https://github.com/MateusPitura/api-spring-vestibular'
                         image={DefaultEmptyProject}
+                        badgesLinks={[
+                            'https://img.shields.io/badge/spring boot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white', //Spring Boot
+                            'https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white',  //Java
+                            'https://img.shields.io/badge/RESTful API-2F3134?style=for-the-badge', //RESTFUL API
+                            'https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white', //POSTMAN
+                            'https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white', //GIT
+                            'https://img.shields.io/badge/OCI-F80000?style=for-the-badge&logo=oracle&logoColor=white', //OCI
+                            'https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black', //LINUX
+                            'https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white', //MySQL
+
+                        ]}
                     />
                 </Slider>
             </div>

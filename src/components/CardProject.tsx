@@ -1,12 +1,15 @@
+import Badges from "./Badges";
+
 interface CardProjectProperties {
     title: string;
     releaseYear: number;
     description: string;
     link: string;
     image: string;
+    badgesLinks: string[];
 }
 
-function CardProject({ description, image, link, releaseYear, title }: CardProjectProperties) {
+function CardProject({ description, image, link, releaseYear, title, badgesLinks }: CardProjectProperties) {
     return (
         <div className="flex justify-center">
             <div className='flex bg-[#FFF9EE] w-[900px] rounded-lg justify-center shadow-lg'>
@@ -28,6 +31,9 @@ function CardProject({ description, image, link, releaseYear, title }: CardProje
                                 {description}
                             </span>
                         </div>
+                        <Badges
+                            links={badgesLinks}
+                        />
                     </div>
                 </a>
             </div>

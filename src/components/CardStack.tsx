@@ -19,7 +19,7 @@ function CardStack({ title, stacksLink }: CardStackProperties) {
                 {stacksLink?.map((item, index) => (
                     <div key={index}>
                         <div className='flex justify-center flex-wrap pb-2'>
-                            <img src={item} />
+                            <img className='rounded-lg'src={item} />
                         </div>
                         {index != stacksLastIndex && <Divider />}
                     </div>
