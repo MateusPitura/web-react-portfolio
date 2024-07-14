@@ -14,7 +14,7 @@ function CardStack({ title, badges }: CardStackProperties) {
     return (
         <div className='flex-1 flex-wrap min-w-[200px] p-5 m-5'>
             <div className='pb-5'>
-                <span className='text-[28px] text-[#1e1b13]'>{title}</span>
+                <span className='text-[28px] text-onSurface-light'>{title}</span>
             </div>
             <div className='space-y-3'>
                 {badges?.map((item, index) => (

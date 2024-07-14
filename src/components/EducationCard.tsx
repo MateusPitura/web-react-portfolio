@@ -15,18 +15,18 @@ function EducationCard({ activities, course, fromTo, school, isLarge, badges }: 
     return (
         isLarge ?
             <div className='flex w-full mx-2 min-h-[400px] justify-center' >
-                <div className='bg-[#eee2bc] max-w-[600px] min-w-[350px] my-10 rounded-lg shadow-md' >
+                <div className='bg-secondary-light max-w-[600px] min-w-[350px] my-10 rounded-lg shadow-md' >
                     <div className='p-5 space-y-5'>
                         <div className='flex w-full'>
-                            <span className='flex flex-1 justify-start text-[24px] text-[#211b04]'>{school}</span>
-                            <span className='flex flex-1 justify-end text-[24px] text-[#211b04]'>{fromTo}</span>
+                            <span className='flex flex-1 justify-start text-[24px] text-outline-light'>{school}</span>
+                            <span className='flex flex-1 justify-end text-[24px] text-outline-light'>{fromTo}</span>
                         </div>
                         <div>
-                            <span className='flex flex-1 justify-center text-[28px] text-[#363016]'>{course}</span>
+                            <span className='flex flex-1 justify-center text-[28px] text-onSecondary-light'>{course}</span>
                         </div>
                         <div className='flex flex-wrap space-y-2 text-start'>
                             {activities?.map((item, index) => (
-                                <span key={index} className='text-[16px] text-[#363016]'>{item}</span>
+                                <span key={index} className='text-[16px] text-onSecondary-light'>{item}</span>
                             ))}
                             <Badges
                                 badges={badges}
@@ -37,18 +37,18 @@ function EducationCard({ activities, course, fromTo, school, isLarge, badges }: 
             </div >
             :
             <div className='flex min-h-[200px] justify-center'>
-                <div className='bg-[#eee2bc] w-[300px] m-2 rounded-lg shadow-sm' >
+                <div className='bg-secondary-light w-[300px] m-2 rounded-lg shadow-sm' >
                     <div className='p-3 space-y-5'>
                         <div className='flex w-full'>
-                            <span className='flex flex-1 justify-start text-[16px] text-[#211b04]'>{school}</span>
-                            <span className='flex flex-1 justify-end text-[16px] text-[#211b04]'>{fromTo}</span>
+                            <span className='flex flex-1 justify-start text-[16px] text-outline-light'>{school}</span>
+                            <span className='flex flex-1 justify-end text-[16px] text-outline-light'>{fromTo}</span>
                         </div>
                         <div>
-                            <span className='flex flex-1 justify-center text-[24px] text-[#363016] min-h-[75px]'>{course}</span>
+                            <span className='flex flex-1 justify-center text-[24px] text-onSecondary-light min-h-[75px]'>{course}</span>
                         </div>
                         <div className='flex flex-wrap space-y-2 text-start'>
                             {activities?.map((item, index) => (
-                                <span key={index} className='text-[14px] text-[#363016]'>{item}</span>
+                                <span key={index} className='text-[14px] text-onSecondary-light'>{item}</span>
                             ))}
                             <Badges
                                 badges={badges}

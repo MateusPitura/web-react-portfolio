@@ -11,10 +11,10 @@ function App() {
     <>
       <div className='flex flex-wrap pt-20'>
         <Introduction />
-        <Contact />
         <Experience />
         <Education />
         <Project />
+        <Contact />
         <Stacks />
       </div>
     </>

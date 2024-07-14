@@ -5,8 +5,34 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          light: '#E15638'
+        },
+        onPrimary: {
+          light: '#FEFAEC'
+        },
+        secondary: {
+          light: '#24242C'
+        },
+        onSecondary: {
+          light: '#FEFAEC'
+        },
+        surface: {
+          light: '#FFFFFF'
+        },
+        onSurface: {
+          light: '#24232C'
+        },
+        outline: {
+          light: '#969080'
+        },
+        surfaceVariant: {
+          light: '#0A0A0A'
+        }
+      }
+    },
   },
   plugins: [],
 }
-

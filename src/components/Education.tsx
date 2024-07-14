@@ -10,14 +10,13 @@ function Education() {
                 course='Bacharelado em Engenharia de Software'
                 activities={[
                     'Como acadêmico extensionista, palestrei para a comunidade sobre segurança digital, o que incluiu temas como phishing e proteção de dados',
-                    'Além disso, desenvolvi projetos usando Realidade Aumentada com foco na comunidade escolar',
+                    'Além disso, já desenvolvi usando Realidade Aumentada com foco na comunidade escolar',
                     'Também colaborei na tesouraria do centro acadêmico do curso',
                 ]}
                 isLarge
                 badges={[
                     badgesSkills.C,
                     badgesSkills.Python,
-                    badgesSkills.Unity,
                     badgesSkills.Java,
                 ]}
             />
@@ -62,7 +61,7 @@ function Education() {
                             <a
                                 href='https://catalog-education.oracle.com/pls/certview/sharebadge?id=624E43496DE7A92D339650BEB80BCEFBC9D6B87F214C9C1BA51039E5254F97D5'
                                 target='_blank'
-                                className='hover:opacity-50 hover:text-[#363016] underline text-[#363016] font-normal'
+                                className='hover:opacity-50 hover:text-onSecondary-light underline text-onSecondary-light font-normal'
                             >
                                 OCI Foundations Associate
                             </a>

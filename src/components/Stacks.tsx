@@ -56,18 +56,15 @@ function Stacks() {
                     ]}
                 />
                 <CardStack
-                    title='Games'
-                    badges={[
-                        badgesSkills.Unity,
-                    ]}
-                />
-                <CardStack
                     title='Others'
                     badges={[
                         badgesSkills.C,
                         badgesSkills.Python,
                         badgesSkills.Storybook,
                     ]}
+                />
+                <CardStack
+                    title=''
                 />
             </div>
         </div>

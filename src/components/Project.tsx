@@ -17,7 +17,7 @@ function Project() {
     };
 
     return (
-        <div className='flex min-h-[800px] bg-[#43664E] p-2 w-full justify-center items-center'>
+        <div className='flex min-h-[800px] bg-primary-light p-2 w-full justify-center items-center'>
             <div className='w-[80%]'>
                 <Slider {...settings}>
                     <CardProject
