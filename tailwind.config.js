@@ -34,5 +34,8 @@ export default {
       }
     },
   },
+  fontFamily: {
+    'caveat': ['Caveat', 'sans-serif']
+  },
   plugins: [],
 }

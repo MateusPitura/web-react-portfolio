@@ -2,6 +2,7 @@ import { AppBar, Divider } from '@mui/material'
 import { Translate, DarkMode } from '@mui/icons-material'
 import "../i18n"
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     const { i18n } = useTranslation();
@@ -23,11 +24,12 @@ export default function Header() {
             }}
         >
             <div className='flex p-2 px-10 items-center min-h-[5rem] space-x-1 bg-surface-light'>
-                <div className='flex-1 flex justify-start items-center'>
-                    {/* <img src={PhotoAvatarMe} className='max-h-[4rem]' />
-            <span className='text-primary-light font-medium text-[1.5rem] font-'>
-              MP
-            </span> */}
+                <div className='flex-2 flex justify-start items-center'>
+                    <Link to="/web-react-portfolio/" className='hover:opacity-50'>
+                        <span className='text-primary-light under font-medium text-[2rem] font-[caveat]'>
+                            Mateus Pitura
+                        </span>
+                    </Link>
                 </div>
                 <div className='flex-1 flex justify-end items-center text-center gap-5'>
                     <button onClick={toggleLanguage} className='hover:opacity-50'>
