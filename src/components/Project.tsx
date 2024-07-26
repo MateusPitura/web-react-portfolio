@@ -17,8 +17,8 @@ function Project() {
     };
 
     return (
-        <div className='flex min-h-[800px] bg-primary-light p-2 w-full justify-center items-center'>
-            <div className='w-[80%]'>
+        <div className='flex min-h-[50rem] bg-primary-light p-2 w-full justify-center items-center'>
+            <div className='w-[85%] md:w-[80%]'>
                 <Slider {...settings}>
                     <CardProject
                         title="app-reactnative-vestibular"

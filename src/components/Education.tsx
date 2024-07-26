@@ -1,5 +1,4 @@
 import EducationCard from "./EducationCard"
-import { badgesSkills } from "../constants/badgesSkills"
 
 function Education() {
     return (
@@ -9,50 +8,27 @@ function Education() {
                 fromTo='2022 - 2026'
                 course='Bacharelado em Engenharia de Software'
                 activities={[
-                    'Como acadêmico extensionista, palestrei para a comunidade sobre segurança digital, o que incluiu temas como phishing e proteção de dados',
-                    'Além disso, já desenvolvi usando Realidade Aumentada com foco na comunidade escolar',
-                    'Também colaborei na tesouraria do centro acadêmico do curso',
+                    'Como acadêmico extensionista, desenvolvi um software usando Realidade Aumentada voltado para a comunidade escolar',
+                    'Além disso, palestrei para a comunidade sobre segurança digital, o que incluiu temas como phishing e proteção de dados',
                 ]}
                 isLarge
-                badges={[
-                    badgesSkills.C,
-                    badgesSkills.Python,
-                    badgesSkills.Java,
-                ]}
             />
-            <div className='flex w-full justify-center mb-10'>
-                <div className='flex flex-wrap max-w-[1000px] justify-center'>
+            <div className='w-full mb-10'>
+                <div className='grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] w-[60%] gap-2 m-auto max-w-[62.5rem]'>
                     <EducationCard
-                        school='OneBitCode'
+                        school='Onebitcode'
                         fromTo='2024'
-                        course='Full Stack'
-                        badges={[
-                            badgesSkills.React,
-                            badgesSkills.TypeScript,
-                            badgesSkills.JavaScript,
-                            badgesSkills.Tailwind,
-                            badgesSkills.CSS,
-                            badgesSkills.HTML,
-                        ]}
+                        course='Full Stack JavaScript'
                     />
                     <EducationCard
                         school='Harvard'
                         fromTo='2024'
-                        course='Cs50'
-                        badges={[
-                            badgesSkills.C,
-                        ]}
+                        course='CS50'
                     />
                     <EducationCard
                         school='iFood + Ada'
                         fromTo='2023 - 2024'
                         course='Vem Ser Tech'
-                        badges={[
-                            badgesSkills.React,
-                            badgesSkills.JavaScript,
-                            badgesSkills.CSS,
-                            badgesSkills.HTML,
-                        ]}
                     />
                     <EducationCard
                         school='Oracle'
@@ -66,31 +42,16 @@ function Education() {
                                 OCI Foundations Associate
                             </a>
                         }
-                        badges={[
-                            badgesSkills.OCI,
-
-                        ]}
                     />
                     <EducationCard
                         school='Oracle + Alura'
                         fromTo='2022 - 2023'
                         course='ONE'
-                        badges={[
-                            badgesSkills.SpringBoot,
-                            badgesSkills.RESTfulAPI,
-                            badgesSkills.Java,
-                            badgesSkills.Postman,
-                            badgesSkills.MySQL,
-                            badgesSkills.JWT
-                        ]}
                     />
                     <EducationCard
                         school='SENAI'
                         fromTo='2019 - 2021'
                         course='Técnico em Automação Industrial'
-                        badges={[
-                            badgesSkills.C,
-                        ]}
                     />
                 </div>
             </div>

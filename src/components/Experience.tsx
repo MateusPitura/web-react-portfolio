@@ -3,7 +3,7 @@ import { badgesSkills } from '../constants/badgesSkills'
 
 function Experience() {
     return (
-        <div className='flex w-full bg-surfaceVariant-light min-h-[500px] justify-center'>
+        <div className='flex w-full bg-secondary-light min-h-[31.25rem] justify-center'>
             <div className='justify-center'>
                 <JobCard
                     company='HURCG'
@@ -37,9 +37,9 @@ function Experience() {
                     company='Medcloud'
                     position='Estágio FullStack'
                     activities={[
-                        'Documentação de biblioteca de componentes com Storybook',
-                        'Criação e manutenção de front-end com React',
-                        'Programação de back-end com Node, AWS e GraphQL',
+                        'Documentação e aperfeiçoamento de biblioteca de componentes interna',
+                        'Criação e manutenção de front-end',
+                        'Modelagem de banco de dados, desenvolvimento de back-end e deploy em nuvem',
                     ]}
                     yearFrom={2024}
                     badges={[
@@ -57,12 +57,12 @@ function Experience() {
                         badgesSkills.Storybook,
                     ]}
                 />
-                <div className='flex max-w-[450px] mb-5'>
+                <div className='flex max-w-[28.125rem] mb-5'>
                     <div className="p-4">
-                        <div className='my-10 min-w-[75px]' />
+                        <div className='my-10 min-w-[4.6875rem]' />
                     </div>
-                    <div className='min-w-[20px] flex justify-center'>
-                        <div className='bg-gradient-to-b from-surface-light to-surfaceVariant-light min-heigth-[100px] w-[4px]'></div>
+                    <div className='min-w-[1.25rem] flex justify-center'>
+                        <div className='bg-gradient-to-b from-surface-light to-secondary-light min-heigth-[6.25rem] w-[0.25rem]'></div>
                     </div>
                 </div>
             </div>

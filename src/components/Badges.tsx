@@ -1,7 +1,7 @@
 import { Badge } from "../types/Badge";
 
 interface BadgesProperties {
-    badges: Badge[];
+    badges?: Badge[];
 }
 
 function Badges({ badges }: BadgesProperties) {
