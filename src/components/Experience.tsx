@@ -55,6 +55,8 @@ function Experience() {
                         badgesSkills.MySQL,
                         badgesSkills.GraphQL,
                         badgesSkills.Storybook,
+                        badgesSkills.Terraform,
+                        badgesSkills.Docker
                     ]}
                 />
                 <div className='flex max-w-[28.125rem] mb-5'>

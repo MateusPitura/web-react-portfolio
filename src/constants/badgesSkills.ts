@@ -1,3 +1,5 @@
+// src: https://github.com/Ileriayo/markdown-badges
+
 export const badgesSkills = {
     React: {
         id: '1',
@@ -123,5 +125,15 @@ export const badgesSkills = {
         id: '25',
         imageUrl: 'https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens', //JWT
         reference: 'JWT',
+    },
+    Terraform: {
+        id: '26',
+        imageUrl: 'https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white', // Terraform
+        reference: 'TERRAFORM'
+    },
+    Docker: {
+        id: '26',
+        imageUrl: 'https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white', // Docker
+        reference: 'DOCKER'
     }
 }

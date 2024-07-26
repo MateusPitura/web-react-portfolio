@@ -44,8 +44,8 @@ function Stacks() {
                     badges={[
                         badgesSkills.OCI,
                         badgesSkills.AWS,
-                        badgesSkills.Git,
-                        badgesSkills.Linux,
+                        badgesSkills.Terraform,
+                        badgesSkills.Docker
                     ]}
                 />
                 <CardStack
@@ -53,6 +53,13 @@ function Stacks() {
                     badges={[
                         badgesSkills.ReactNative,
                         badgesSkills.Android,
+                    ]}
+                />
+                <CardStack
+                    title='Others'
+                    badges={[
+                        badgesSkills.Git,
+                        badgesSkills.Linux,
                     ]}
                 />
             </div>
