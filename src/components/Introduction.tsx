@@ -2,7 +2,7 @@ import PhotoPerfilMe from '../assets/images/photo-perfil-me.jpg'
 
 function Introduction() {
     return (
-        <div className='flex flex-wrap p-5 pb-20 justify-center w-full'>
+        <div className='flex flex-wrap px-5 pb-20 justify-center w-full'>
             <div className='flex-1 p-2 max-w-[31.25rem] min-w-[18.75rem]'>
                 <div className='border-primary-light border-2 max-w-[6.25rem] relative right-5 top-5'></div>
                 <img src={PhotoPerfilMe} className='max-w-full rounded-lg shadow-sm' />

@@ -3,7 +3,7 @@ import { badgesSkills } from '../constants/badgesSkills';
 
 function Stacks() {
     return (
-        <div className='min-h-[50rem] w-full p-2 py-10'>
+        <div className='min-h-[25rem] w-full p-2 py-20'>
             <div className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] w-[60%] gap-5 m-auto'>
                 <CardStack
                     title='Front-End'
