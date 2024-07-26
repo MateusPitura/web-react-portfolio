@@ -1,17 +1,20 @@
+import { useTranslation } from 'react-i18next';
 import JobCard from '../components/JobCard'
 import { badgesSkills } from '../constants/badgesSkills'
 
 function Experience() {
+    const { t } = useTranslation();
+
     return (
         <div className='flex w-full bg-secondary-light min-h-[31.25rem] justify-center'>
             <div className='justify-center'>
                 <JobCard
                     company='HURCG'
-                    position='Estágio Desenvolvimento'
+                    position={t('EXPERIENCE.HURCG')}
                     activities={[
-                        'Geração de relatórios com SQL a partir de banco de dados Oracle',
-                        'Suporte ao usuário para o sistema Tasy',
-                        'Criação de planilhas automatizadas para análise de dados',
+                        t('HURCG.ACTIVITY1'),
+                        t('HURCG.ACTIVITY2'),
+                        t('HURCG.ACTIVITY3'),
                     ]}
                     yearFrom={2022}
                     badges={[
@@ -20,11 +23,11 @@ function Experience() {
                 />
                 <JobCard
                     company='Continental'
-                    position='Estágio TI'
+                    position={t('EXPERIENCE.CONTINENTAL')}
                     activities={[
-                        'Criação de intranets para setores da empresa',
-                        'Gerenciamento e auditoria de computadores via PowerShell',
-                        'Manutenção de infraestrutura de redes',
+                        t('CONTINENTAL.ACTIVITY1'),
+                        t('CONTINENTAL.ACTIVITY2'),
+                        t('CONTINENTAL.ACTIVITY3'),
                     ]}
                     yearFrom={2023}
                     badges={[
@@ -35,11 +38,11 @@ function Experience() {
                 />
                 <JobCard
                     company='Medcloud'
-                    position='Estágio FullStack'
+                    position={t('EXPERIENCE.MEDCLOUD')}
                     activities={[
-                        'Documentação e aperfeiçoamento de biblioteca de componentes interna',
-                        'Criação e manutenção de front-end',
-                        'Modelagem de banco de dados, desenvolvimento de back-end e deploy em nuvem',
+                        t('MEDCLOUD.ACTIVITY1'),
+                        t('MEDCLOUD.ACTIVITY2'),
+                        t('MEDCLOUD.ACTIVITY3'),
                     ]}
                     yearFrom={2024}
                     badges={[

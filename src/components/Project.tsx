@@ -1,11 +1,12 @@
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import AppReactnativeVestibular from '../assets/images/app-reactnative-vestibular.png'
-import AppReactNativeCombustivel from '../assets/images/app-reactnative-combustivel.png'
-import DefaultEmptyProject from '../assets/images/default-empty-project.png'
+import AppReactnativeVestibular from '../assets/images/app-reactnative-vestibular.webp'
+import AppReactNativeCombustivel from '../assets/images/app-reactnative-combustivel.webp'
+import DefaultEmptyProject from '../assets/images/default-empty-project.webp'
 import CardProject from '../components/CardProject'
 import { badgesSkills } from '../constants/badgesSkills';
+import { useTranslation } from 'react-i18next';
 
 function Project() {
     const settings = {
@@ -16,6 +17,8 @@ function Project() {
         slidesToScroll: 1
     };
 
+    const { t } = useTranslation();
+
     return (
         <div className='flex min-h-[50rem] bg-primary-light p-2 w-full justify-center items-center'>
             <div className='w-[85%] md:w-[80%]'>
@@ -25,7 +28,7 @@ function Project() {
                         image={AppReactnativeVestibular}
                         releaseYear={2024}
                         link='https://github.com/MateusPitura/app-reactnative-vestibular'
-                        description='📆 O Vest Info é um aplicativo desenvolvido em React Native projetado para fornecer uma forma conveniente para acompanhar notícias e datas de vestibulares'
+                        description={t('PROJECT.VESTIBULAR')}
                         badges={[
                             badgesSkills.ReactNative,
                             badgesSkills.CSS,
@@ -37,7 +40,7 @@ function Project() {
                     <CardProject
                         title="app-reactnative-combustivel"
                         releaseYear={2023}
-                        description='🚗 Meu Carro Flex é um aplicativo desenvolvido em React Native que ajuda os usuários a determinar qual combustível é mais econômico para seus veículos'
+                        description={t('PROJECT.COMBUSTIVEL')}
                         link='https://github.com/MateusPitura/app-reactnative-combustivel'
                         image={AppReactNativeCombustivel}
                         badges={[
@@ -51,7 +54,7 @@ function Project() {
                     <CardProject
                         title="api-spring-vestibular"
                         releaseYear={2024}
-                        description='☁️ Este projeto consiste em uma REST API desenvolvida em Spring Boot para suportar o aplicativo Vest Info'
+                        description={t('PROJECT.API')}
                         link='https://github.com/MateusPitura/api-spring-vestibular'
                         image={DefaultEmptyProject}
                         badges={[

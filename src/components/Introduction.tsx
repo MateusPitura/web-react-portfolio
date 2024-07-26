@@ -1,6 +1,9 @@
-import PhotoPerfilMe from '../assets/images/photo-perfil-me.jpg'
+import PhotoPerfilMe from '../assets/images/photo-perfil-me.webp'
+import { useTranslation } from 'react-i18next'
 
 function Introduction() {
+    const { t } = useTranslation();
+
     return (
         <div className='flex flex-wrap px-5 pb-20 justify-center w-full'>
             <div className='flex-1 p-2 max-w-[31.25rem] min-w-[18.75rem]'>
@@ -20,14 +23,12 @@ function Introduction() {
                 <div>
                     <div className='mb-2'>
                         <span className='text-onSurface-light text-[1rem]'>
-                            Tenho interesse em criar soluções e resolver problemas de forma eficiente usando meu conhecimento em Engenharia de Software
+                            {t('INTRODUCTION.P1')}
                         </span>
                     </div>
                     <div className='mt-2'>
                         <span className='text-onSurface-light text-[1rem]'>
-                            Nos últimos anos, venho desenvolvendo programas para
-                            <strong> web</strong> e para <strong>dispositivos móveis</strong>
-                            , além de atuar na elaboração do back-end, do banco de dados e da infraestrutura
+                            {t('INTRODUCTION.P2')}
                         </span>
                     </div>
                 </div>

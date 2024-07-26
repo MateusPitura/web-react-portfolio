@@ -1,15 +1,18 @@
+import { useTranslation } from "react-i18next";
 import EducationCard from "./EducationCard"
 
 function Education() {
+    const { t } = useTranslation();
+
     return (
         <>
             <EducationCard
                 school='UEPG'
                 fromTo='2022 - 2026'
-                course='Bacharelado em Engenharia de Software'
+                course={t('EDUCATION.UEPG')}
                 activities={[
-                    'Como acadêmico extensionista, desenvolvi um software usando Realidade Aumentada voltado para a comunidade escolar',
-                    'Além disso, palestrei para a comunidade sobre segurança digital, o que incluiu temas como phishing e proteção de dados',
+                    t('UEPG.ACTIVITY1'),
+                    t('UEPG.ACTIVITY2'),
                 ]}
                 isLarge
             />
@@ -51,7 +54,7 @@ function Education() {
                     <EducationCard
                         school='SENAI'
                         fromTo='2019 - 2021'
-                        course='Técnico em Automação Industrial'
+                        course={t('EDUCATION.SENAI')}
                     />
                 </div>
             </div>

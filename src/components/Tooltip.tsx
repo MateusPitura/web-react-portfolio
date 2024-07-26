@@ -1,6 +1,7 @@
 import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import { ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const TooltipStyled = styled(({ className, ...props }: TooltipProps) => (
     <Tooltip {...props} classes={{ popper: className }} />
@@ -9,6 +10,7 @@ const TooltipStyled = styled(({ className, ...props }: TooltipProps) => (
         maxWidth: 250,
         fontSize: '1rem',
         fontFamily: 'Ubuntu, sans-serif',
+        boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'
     },
 });
 
@@ -18,10 +20,11 @@ interface CustomTooltipProperties {
 }
 
 export default function CustomTooltip({ open, children }: CustomTooltipProperties) {
+    const { t } = useTranslation();
 
     return (
         <TooltipStyled
-            title="Clique nas tecnologias para ver onde já as utilizei"
+            title={t('STACKS.TOOLTIP')}
             open={open}
             placement='bottom-end'
             arrow
