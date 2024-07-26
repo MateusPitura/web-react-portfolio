@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <Header />
-      <div className='flex flex-wrap pt-20'>
+      <div className='flex flex-wrap pt-20 bg-surface-light dark:bg-surface-dark'>
         <Introduction />
         <Experience />
         <Education />

@@ -40,7 +40,7 @@ function CardStack({ title, badges, hasTooltip }: CardStackProperties) {
   return (
     <div className='flex-1 flex-wrap min-w-[12.5rem] p-2 m-2'>
       <div className='pb-5'>
-        <span className='text-[1.75rem] text-onSurface-light font-medium'>{title}</span>
+        <span className='text-[1.75rem] text-onSurface-light dark:text-onSurface-dark font-medium'>{title}</span>
       </div>
       <div className='space-y-3'>
         {badges?.map((item, index) => (
@@ -48,9 +48,10 @@ function CardStack({ title, badges, hasTooltip }: CardStackProperties) {
             <div className='flex justify-center flex-wrap pb-2'>
               <button
                 className='hover:opacity-50'
-                onClick={() => { 
+                onClick={() => {
                   setIsTooltipOpen(false)
-                  scrollToElement(item.reference)}
+                  scrollToElement(item.reference)
+                }
                 }
               >
                 {hasTooltip && index == stacksLastIndex ?
@@ -62,7 +63,7 @@ function CardStack({ title, badges, hasTooltip }: CardStackProperties) {
                 }
               </button>
             </div>
-            {index != stacksLastIndex && <Divider />}
+            {index != stacksLastIndex && <Divider className='bg-surface-light dark:bg-outline-light' />}
           </div>
         ))}
       </div>

@@ -26,10 +26,10 @@ function JobCard({ company, position, activities, yearFrom, badges }: JobCardPro
                 <div className='flex items-start'>
                     <span className='text-[1rem] text-surface-light'>{position}</span>
                 </div>
-                <div className='flex flex-wrap text-left bg-surface-light p-4 rounded-lg space-y-1'>
+                <div className='flex flex-wrap text-left bg-surface-light dark:bg-surface-dark p-4 rounded-lg space-y-1'>
                     {
                         activities.map((item, index) => (
-                            <span key={index} className='text-onSurface-light text-[0.875rem]'>{item}</span>
+                            <span key={index} className='text-onSurface-light dark:text-onSurface-dark text-[0.875rem]'>{item}</span>
                         ))
                     }
                     <Badges

@@ -22,12 +22,12 @@ function Introduction() {
                 </div>
                 <div>
                     <div className='mb-2'>
-                        <span className='text-onSurface-light text-[1rem]'>
+                        <span className='text-onSurface-light dark:text-surface-light text-[1rem]'>
                             {t('INTRODUCTION.P1')}
                         </span>
                     </div>
                     <div className='mt-2'>
-                        <span className='text-onSurface-light text-[1rem]'>
+                        <span className='text-onSurface-light dark:text-surface-light text-[1rem]'>
                             {t('INTRODUCTION.P2')}
                         </span>
                     </div>

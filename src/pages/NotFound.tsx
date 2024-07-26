@@ -8,10 +8,10 @@ export default function NotFound() {
     const { t } = useTranslation()
 
     return (
-        <>
+        <div className="bg-surface-light dark:bg-surface-dark">
             <Header />
             <div className="flex min-h-[100vh] flex-col">
-                <div className='flex flex-wrap pt-20 max-w-[50rem] m-auto justify-center text-left space-y-3 py-20 text-onSurface-light px-2'>
+                <div className='flex flex-wrap pt-20 max-w-[50rem] m-auto justify-center text-left space-y-3 py-20 text-onSurface-light dark:text-onSurface-dark px-2'>
                     <h1 className="text-[3.5625rem] w-full">
                         {t('PAGE_NOT_FOUND.TITLE')}
                     </h1>
@@ -28,6 +28,6 @@ export default function NotFound() {
                 </div>
                 <Footer />
             </div>
-        </>
+        </div>
     )
 }

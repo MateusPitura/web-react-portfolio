@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -20,17 +21,16 @@ export default {
           light: '#FEFAEC'
         },
         surface: {
+          dark: "#121212",
           light: '#FFFFFF'
         },
         onSurface: {
+          dark: "#E0E0E0",
           light: '#24232C'
         },
         outline: {
           light: '#969080'
         },
-        surfaceVariant: {
-          light: '#0A0A0A'
-        }
       }
     },
   },

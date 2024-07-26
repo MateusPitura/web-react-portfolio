@@ -1,11 +1,18 @@
 import { AppBar, Divider } from '@mui/material'
-import { Translate, DarkMode } from '@mui/icons-material'
+import { Translate, DarkMode, LightMode } from '@mui/icons-material'
 import "../i18n"
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Header() {
     const { i18n } = useTranslation();
+    const [dark, setDark] = useState(false);
+
+    const darkModeHandler = () => {
+        setDark(!dark);
+        document.body.classList.toggle("dark");
+    }
 
     const toggleLanguage = () => {
         if (i18n.language === 'pt') {
@@ -20,10 +27,10 @@ export default function Header() {
             position="sticky"
             style={{
                 boxShadow: 'none',
-                backgroundColor: 'transparent',
+                backgroundColor: 'light-gray',
             }}
         >
-            <div className='flex p-2 px-10 items-center min-h-[5rem] space-x-1 bg-surface-light'>
+            <div className='flex p-2 px-10 items-center min-h-[5rem] space-x-1 bg-surface-light dark:bg-surface-dark'>
                 <div className='flex-2 flex justify-start items-center'>
                     <Link to="/web-react-portfolio/" className='hover:opacity-50'>
                         <span className='text-primary-light under font-medium text-[2rem] font-[caveat]'>
@@ -33,17 +40,18 @@ export default function Header() {
                 </div>
                 <div className='flex-1 flex justify-end items-center text-center gap-5'>
                     <button onClick={toggleLanguage} className='hover:opacity-50'>
-                        <span className='text-onSurface-light font-medium text-[1rem]'>
+                        <span className='text-onSurface-light dark:text-onSurface-dark font-medium text-[1rem]'>
                             {i18n.language == "pt" ? 'PT' : 'EN'}
                         </span>
-                        <Translate className='text-onSurface-light m-1' />
+                        <Translate className='text-onSurface-light dark:text-onSurface-dark m-1' />
                     </button>
-                    <button className=''>
-                        <DarkMode className='text-onSurface-light m-1 hover:opacity-50' />
+                    <button onClick={darkModeHandler} className='hover:opacity-50'>
+                        {!dark && <DarkMode className='text-onSurface-light dark:text-onSurface-dark m-1' />}
+                        {dark && <LightMode className='text-onSurface-light dark:text-onSurface-dark m-1' />}
                     </button>
                 </div>
             </div>
-            <Divider className='border-red-50' />
+            <Divider className='bg-surface-light dark:bg-outline-light' />
         </AppBar>
     )
 }
