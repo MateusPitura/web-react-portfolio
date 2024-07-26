@@ -1,8 +1,7 @@
 import { Divider } from '@mui/material'
-import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import { ReactNode, useState } from 'react';
 import { Badge } from '../types/Badge';
-import { styled } from '@mui/material/styles';
+import Tooltip from './Tooltip'
 
 interface CardStackProperties {
   title: string | ReactNode;
@@ -33,16 +32,6 @@ const scrollToElement = (id: string) => {
   }
 };
 
-const CustomTooltip = styled(({ className, ...props }: TooltipProps) => (
-  <Tooltip {...props} classes={{ popper: className }} />
-))({
-  [`& .${tooltipClasses.tooltip}`]: {
-    maxWidth: 250,
-    fontSize: '1rem',
-    fontFamily: 'Ubuntu, sans-serif',
-  },
-});
-
 function CardStack({ title, badges, hasTooltip }: CardStackProperties) {
 
   const stacksLastIndex = Number(badges?.length) - 1;
@@ -65,26 +54,9 @@ function CardStack({ title, badges, hasTooltip }: CardStackProperties) {
                 }
               >
                 {hasTooltip && index == stacksLastIndex ?
-                  <CustomTooltip 
-                    title="Clique sobre as tecnologias para visualizar onde eu já usei" 
-                    open={isTooltipOpen} 
-                    placement='bottom-end' 
-                    arrow
-                    slotProps={{
-                      popper: {
-                        modifiers: [
-                          {
-                            name: 'offset',
-                            options: {
-                              offset: [0, -5],
-                            },
-                          },
-                        ],
-                      },
-                    }}
-                  >
+                  <Tooltip open={isTooltipOpen}>
                     <img className='rounded-lg' src={item.imageUrl} />
-                  </CustomTooltip>
+                  </Tooltip>
                   :
                   <img className='rounded-lg' src={item.imageUrl} />
                 }
