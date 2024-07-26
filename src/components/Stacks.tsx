@@ -9,10 +9,11 @@ function Stacks() {
                     title='Front-End'
                     badges={[
                         badgesSkills.React,
-                        badgesSkills.TypeScript,
-                        badgesSkills.JavaScript,
                         badgesSkills.Storybook,
+                        badgesSkills.JavaScript,
+                        badgesSkills.TypeScript,
                     ]}
+                    hasTooltip
                 />
                 <CardStack
                     title='Design'
