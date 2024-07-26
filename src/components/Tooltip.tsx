@@ -21,10 +21,11 @@ export default function CustomTooltip({ open, children }: CustomTooltipPropertie
 
     return (
         <TooltipStyled
-            title="Clique sobre as tecnologias para visualizar onde eu já usei"
+            title="Clique nas tecnologias para ver onde já as utilizei"
             open={open}
             placement='bottom-end'
             arrow
+            disableInteractive
             slotProps={{
                 popper: {
                     modifiers: [

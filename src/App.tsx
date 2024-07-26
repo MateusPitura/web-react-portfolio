@@ -1,24 +1,21 @@
-import './App.css'
-import Introduction from './components/Introduction'
-import Contact from './components/Contact'
-import Experience from './components/Experience'
-import Education from './components/Education'
-import Project from './components/Project'
-import Stacks from './components/Stacks'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Terms from './pages/Terms';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import NotFound from './pages/NotFound';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <div className='flex flex-wrap pt-20'>
-        <Introduction />
-        <Experience />
-        <Education />
-        <Project />
-        <Contact />
-        <Stacks />
-      </div>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/web-react-portfolio/" element={<Home />} />
+        <Route path="/web-react-portfolio/terms" element={<Terms />} />
+        <Route path="/web-react-portfolio/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
