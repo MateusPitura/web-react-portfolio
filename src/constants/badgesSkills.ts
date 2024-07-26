@@ -132,7 +132,7 @@ export const badgesSkills = {
         reference: 'TERRAFORM'
     },
     Docker: {
-        id: '26',
+        id: '27',
         imageUrl: 'https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white', // Docker
         reference: 'DOCKER'
     }
