@@ -7,8 +7,13 @@ import Project from '../components/Project'
 import Stacks from '../components/Stacks'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import { useRef } from 'react'
+import Slider from 'react-slick'
 
 function Home() {
+
+  const sliderRef = useRef<Slider>(null)
+
   return (
     <>
       <Header />
@@ -16,9 +21,9 @@ function Home() {
         <Introduction />
         <Experience />
         <Education />
-        <Project />
+        <Project sliderRef={sliderRef}/>
         <Contact />
-        <Stacks />
+        <Stacks sliderRef={sliderRef}/>
         <Footer />
       </div>
     </>

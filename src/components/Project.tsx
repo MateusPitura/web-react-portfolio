@@ -7,8 +7,13 @@ import DefaultEmptyProject from '../assets/images/default-empty-project.webp'
 import CardProject from '../components/CardProject'
 import { badgesSkills } from '../constants/badgesSkills';
 import { useTranslation } from 'react-i18next';
+import { RefObject } from 'react';
 
-function Project() {
+interface ProjectProperties {
+    sliderRef: RefObject<Slider>;
+}
+
+function Project({sliderRef}: ProjectProperties) {
     const settings = {
         dots: true,
         infinite: true,
@@ -22,7 +27,7 @@ function Project() {
     return (
         <div className='flex min-h-[50rem] bg-primary-light p-2 w-full justify-center items-center'>
             <div className='w-[85%] md:w-[80%]'>
-                <Slider {...settings}>
+                <Slider ref={sliderRef} {...settings}>
                     <CardProject
                         title="app-reactnative-vestibular"
                         image={AppReactnativeVestibular}

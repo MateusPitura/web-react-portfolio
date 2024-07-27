@@ -1,7 +1,15 @@
+import { RefObject, useState } from 'react';
 import CardStack from '../components/CardStack'
 import { badgesSkills } from '../constants/badgesSkills';
+import Slider from 'react-slick';
 
-function Stacks() {
+interface ProjectProperties {
+    sliderRef: RefObject<Slider>;
+}
+
+function Stacks({ sliderRef }: ProjectProperties) {
+    const [isTooltipOpen, setIsTooltipOpen] = useState(true);
+
     return (
         <div className='min-h-[25rem] w-full p-2 py-20'>
             <div className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] w-[60%] gap-5 m-auto'>
@@ -13,7 +21,9 @@ function Stacks() {
                         badgesSkills.JavaScript,
                         badgesSkills.TypeScript,
                     ]}
-                    hasTooltip
+                    sliderRef={sliderRef}
+                    setIsTooltipOpen={setIsTooltipOpen}
+                    isTooltipOpen={isTooltipOpen}
                 />
                 <CardStack
                     title='Design'
@@ -22,6 +32,8 @@ function Stacks() {
                         badgesSkills.Tailwind,
                         badgesSkills.CSS,
                     ]}
+                    sliderRef={sliderRef}
+                    setIsTooltipOpen={setIsTooltipOpen}
                 />
                 <CardStack
                     title='Back-End'
@@ -32,6 +44,8 @@ function Stacks() {
                         badgesSkills.GraphQL,
                         badgesSkills.Postman,
                     ]}
+                    sliderRef={sliderRef}
+                    setIsTooltipOpen={setIsTooltipOpen}
                 />
                 <CardStack
                     title='Database'
@@ -39,6 +53,8 @@ function Stacks() {
                         badgesSkills.MySQL,
                         badgesSkills.Oracle,
                     ]}
+                    sliderRef={sliderRef}
+                    setIsTooltipOpen={setIsTooltipOpen}
                 />
                 <CardStack
                     title='DevOps'
@@ -48,6 +64,8 @@ function Stacks() {
                         badgesSkills.Terraform,
                         badgesSkills.Docker
                     ]}
+                    sliderRef={sliderRef}
+                    setIsTooltipOpen={setIsTooltipOpen}
                 />
                 <CardStack
                     title='Mobile'
@@ -55,6 +73,8 @@ function Stacks() {
                         badgesSkills.ReactNative,
                         badgesSkills.Android,
                     ]}
+                    sliderRef={sliderRef}
+                    setIsTooltipOpen={setIsTooltipOpen}
                 />
                 <CardStack
                     title='Others'
@@ -62,6 +82,8 @@ function Stacks() {
                         badgesSkills.Git,
                         badgesSkills.Linux,
                     ]}
+                    sliderRef={sliderRef}
+                    setIsTooltipOpen={setIsTooltipOpen}
                 />
             </div>
         </div>

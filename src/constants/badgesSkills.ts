@@ -34,22 +34,26 @@ export const badgesSkills = {
     SpringBoot: {
         id: '7',
         imageUrl: 'https://img.shields.io/badge/spring boot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white', //Spring Boot
-        reference: 'SPRINGBOOT'
+        reference: 'SPRINGBOOT',
+        sliderIndex: 2,
     },
     Java: {
         id: '8',
         imageUrl: 'https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white',  //Java
-        reference: 'JAVA'
+        reference: 'JAVA',
+        sliderIndex: 2,
     },
     RESTfulAPI: {
         id: '9',
         imageUrl: 'https://img.shields.io/badge/RESTful API-2F3134?style=for-the-badge', //RESTFUL API
-        reference: 'RESTFULAPI'
+        reference: 'RESTFULAPI',
+        sliderIndex: 2,
     },
     Postman: {
         id: '10',
         imageUrl: 'https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white', //POSTMAN
-        reference: 'POSTMAN'
+        reference: 'POSTMAN',
+        sliderIndex: 2,
     },
     GraphQL: {
         id: '11',
@@ -59,7 +63,8 @@ export const badgesSkills = {
     OCI: {
         id: '12',
         imageUrl: 'https://img.shields.io/badge/OCI-F80000?style=for-the-badge&logo=oracle&logoColor=white', //OCI
-        reference: 'OCI'
+        reference: 'OCI',
+        sliderIndex: 2,
     },
     AWS: {
         id: '13',
@@ -89,12 +94,14 @@ export const badgesSkills = {
     ReactNative: {
         id: '18',
         imageUrl: 'https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB', //React Native
-        reference: 'REACTNATIVE'
+        reference: 'REACTNATIVE',
+        sliderIndex: 0,
     },
     Android: {
         id: '19',
         imageUrl: 'https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white', // Android
-        reference: 'ANDROID'
+        reference: 'ANDROID',
+        sliderIndex: 0,
     },
     Figma: {
         id: '20',

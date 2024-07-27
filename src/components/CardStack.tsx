@@ -1,12 +1,15 @@
 import { Divider } from '@mui/material'
-import { ReactNode, useState } from 'react';
+import { ReactNode, RefObject } from 'react';
 import { Badge } from '../types/Badge';
 import Tooltip from './Tooltip'
+import Slider from 'react-slick';
 
 interface CardStackProperties {
   title: string | ReactNode;
   badges?: Badge[];
-  hasTooltip?: boolean;
+  sliderRef: RefObject<Slider>;
+  isTooltipOpen?: boolean;
+  setIsTooltipOpen: (state: boolean) => void;
 }
 
 const scrollToElement = (id: string) => {
@@ -32,10 +35,15 @@ const scrollToElement = (id: string) => {
   }
 };
 
-function CardStack({ title, badges, hasTooltip }: CardStackProperties) {
+function CardStack({ title, badges, sliderRef, isTooltipOpen, setIsTooltipOpen }: CardStackProperties) {
 
   const stacksLastIndex = Number(badges?.length) - 1;
-  const [isTooltipOpen, setIsTooltipOpen] = useState(true);
+
+  const goToSlide = (index: number) => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(index)
+    }
+  }
 
   return (
     <div className='flex-1 flex-wrap min-w-[12.5rem] p-2 m-2'>
@@ -50,11 +58,14 @@ function CardStack({ title, badges, hasTooltip }: CardStackProperties) {
                 className='hover:opacity-50'
                 onClick={() => {
                   setIsTooltipOpen(false)
+                  if (typeof item?.sliderIndex === 'number') {
+                    goToSlide(item.sliderIndex)
+                  }
                   scrollToElement(item.reference)
                 }
                 }
               >
-                {hasTooltip && index == stacksLastIndex ?
+                {index == stacksLastIndex && isTooltipOpen ?
                   <Tooltip open={isTooltipOpen}>
                     <img className='rounded-lg' src={item.imageUrl} />
                   </Tooltip>
