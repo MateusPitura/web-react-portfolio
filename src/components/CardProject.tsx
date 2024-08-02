@@ -17,7 +17,7 @@ function CardProject({ description, image, link, releaseYear, title, badges }: C
                 <a className='hover:opacity-50 font-normal p-5' href={link} target='_blank'>
                     <div>
                         <div className='w-full'>
-                            <img className='rounded-lg' src={image} />
+                            <img className='rounded-lg' src={image} alt={`Project ${title}`}/>
                         </div>
                         <div className='flex p-2 mt-2'>
                             <div className='flex-1 flex justify-start'>

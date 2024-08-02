@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         primary: {
-          light: '#E15638'
+          light: '#e95e40'
         },
         onPrimary: {
           light: '#FEFAEC'

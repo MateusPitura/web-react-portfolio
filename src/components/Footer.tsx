@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <div className='p-10 flex bg-secondary-light w-full min-h-[15.625rem] justify-center flex-wrap' >
+    <footer className='p-10 flex bg-secondary-light w-full min-h-[15.625rem] justify-center flex-wrap' >
         <div className='flex-1 p-2 items-center justify-center'>
           <div className='p-2 flex items-center justify-center'>
             <span className='text-onSecondary-light'>
@@ -25,6 +25,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-    </div>
+    </footer>
   )
 }

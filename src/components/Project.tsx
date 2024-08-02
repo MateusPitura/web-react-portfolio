@@ -25,7 +25,7 @@ function Project({sliderRef}: ProjectProperties) {
     const { t } = useTranslation();
 
     return (
-        <div className='flex min-h-[50rem] bg-primary-light p-2 w-full justify-center items-center'>
+        <section className='flex min-h-[50rem] bg-primary-light p-2 w-full justify-center items-center'>
             <div className='w-[85%] md:w-[80%]'>
                 <Slider ref={sliderRef} {...settings}>
                     <CardProject
@@ -75,7 +75,7 @@ function Project({sliderRef}: ProjectProperties) {
                     />
                 </Slider>
             </div>
-        </div>
+        </section>
     )
 }
 

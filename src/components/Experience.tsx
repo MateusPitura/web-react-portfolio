@@ -6,7 +6,7 @@ function Experience() {
     const { t } = useTranslation();
 
     return (
-        <div className='flex w-full bg-secondary-light min-h-[31.25rem] justify-center'>
+        <section className='flex w-full bg-secondary-light min-h-[31.25rem] justify-center'>
             <div className='justify-center'>
                 <JobCard
                     company='HURCG'
@@ -71,7 +71,7 @@ function Experience() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

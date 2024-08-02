@@ -17,15 +17,15 @@ function Home() {
   return (
     <>
       <Header />
-      <div className='flex flex-wrap pt-20 bg-surface-light dark:bg-surface-dark'>
+      <main className='flex flex-wrap pt-20 bg-surface-light dark:bg-surface-dark'>
         <Introduction />
         <Experience />
         <Education />
-        <Project sliderRef={sliderRef}/>
+        <Project sliderRef={sliderRef} />
         <Contact />
-        <Stacks sliderRef={sliderRef}/>
-        <Footer />
-      </div>
+        <Stacks sliderRef={sliderRef} />
+      </main>
+      <Footer />
     </>
   )
 }

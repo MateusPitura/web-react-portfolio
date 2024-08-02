@@ -11,7 +11,7 @@ function Stacks({ sliderRef }: ProjectProperties) {
     const [isTooltipOpen, setIsTooltipOpen] = useState(true);
 
     return (
-        <div className='min-h-[25rem] w-full p-2 py-20'>
+        <section className='min-h-[25rem] w-full p-2 py-20'>
             <div className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] w-[60%] gap-5 m-auto'>
                 <CardStack
                     title='Front-End'
@@ -86,7 +86,7 @@ function Stacks({ sliderRef }: ProjectProperties) {
                     setIsTooltipOpen={setIsTooltipOpen}
                 />
             </div>
-        </div>
+        </section>
     )
 }
 

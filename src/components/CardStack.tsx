@@ -56,6 +56,7 @@ function CardStack({ title, badges, sliderRef, isTooltipOpen, setIsTooltipOpen }
             <div className='flex justify-center flex-wrap pb-2'>
               <button
                 className='hover:opacity-50'
+                name={`Stack ${item.reference}`}
                 onClick={() => {
                   setIsTooltipOpen(false)
                   if (typeof item?.sliderIndex === 'number') {
@@ -67,10 +68,10 @@ function CardStack({ title, badges, sliderRef, isTooltipOpen, setIsTooltipOpen }
               >
                 {index == stacksLastIndex && isTooltipOpen ?
                   <Tooltip open={isTooltipOpen}>
-                    <img className='rounded-lg' src={item.imageUrl} />
+                    <img className='rounded-lg' src={item.imageUrl} alt={`Stack ${item.reference}`}/>
                   </Tooltip>
                   :
-                  <img className='rounded-lg' src={item.imageUrl} />
+                  <img className='rounded-lg' src={item.imageUrl} alt={`Stack ${item.reference}`}/>
                 }
               </button>
             </div>
