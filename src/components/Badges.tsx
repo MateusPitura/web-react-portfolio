@@ -10,7 +10,7 @@ function Badges({ badges }: BadgesProperties) {
             {badges?.map(item =>
                 <div key={item.id}>
                     <div className='flex justify-center flex-wrap'>
-                        <img id={item.reference} className='rounded-lg' src={item.imageUrl} alt={`Stack ${item.reference}`} height={28}/>
+                        <img id={item.reference} className='rounded-lg h-[1.75rem]' src={item.imageUrl} alt={`Stack ${item.reference}`} height={28}/>
                     </div>
                 </div>
             )}

@@ -46,7 +46,7 @@ export default function Header() {
                         </span>
                         <Translate className='text-onSurface-light dark:text-onSurface-dark m-1' />
                     </button>
-                    <button onClick={darkModeHandler} className='hover:opacity-50' name="Change page theme">
+                    <button onClick={darkModeHandler} className='hover:opacity-50' name="Theme button toggle">
                         {!dark && <DarkMode className='text-onSurface-light dark:text-onSurface-dark m-1' />}
                         {dark && <LightMode className='text-onSurface-light dark:text-onSurface-dark m-1' />}
                     </button>
