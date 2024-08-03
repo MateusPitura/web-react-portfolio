@@ -1,6 +1,4 @@
 import { useTranslation } from "react-i18next";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 
 export default function PrivacyPolicy() {
 
@@ -8,7 +6,6 @@ export default function PrivacyPolicy() {
 
     return (
         <div className="bg-surface-light dark:bg-surface-dark">
-            <Header />
             <main className='flex flex-wrap pt-20 max-w-[50rem] m-auto justify-center text-left space-y-3 py-20 text-onSurface-ligh dark:text-onSurface-dark px-2'>
                 <h1 className="text-[3.5625rem] w-full">
                     {t('PRIVACY_POLICY.TITLE')}
@@ -82,7 +79,6 @@ export default function PrivacyPolicy() {
                     {t('PRIVACY_POLICY.SECTION9.PARAGRAPH2')}
                 </p>
             </main>
-            <Footer />
         </div>
     )
 }

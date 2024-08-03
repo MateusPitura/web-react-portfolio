@@ -28,6 +28,7 @@ export default function Header() {
             style={{
                 boxShadow: 'none',
                 backgroundColor: 'light-gray',
+                zIndex: 1501,
             }}
         >
             <header className='flex p-2 px-10 items-center min-h-[5rem] space-x-1 bg-surface-light dark:bg-surface-dark'>

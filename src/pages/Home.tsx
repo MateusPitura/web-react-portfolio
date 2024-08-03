@@ -5,8 +5,6 @@ import Experience from '../components/Experience'
 import Education from '../components/Education'
 import Project from '../components/Project'
 import Stacks from '../components/Stacks'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import { useRef } from 'react'
 import Slider from 'react-slick'
 
@@ -16,7 +14,6 @@ function Home() {
 
   return (
     <>
-      <Header />
       <main className='flex flex-wrap pt-20 bg-surface-light dark:bg-surface-dark'>
         <Introduction />
         <Experience />
@@ -25,7 +22,6 @@ function Home() {
         <Contact />
         <Stacks sliderRef={sliderRef} />
       </main>
-      <Footer />
     </>
   )
 }
