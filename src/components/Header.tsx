@@ -39,13 +39,13 @@ export default function Header() {
                     </Link>
                 </nav>
                 <div className='flex-1 flex justify-end items-center text-center gap-5'>
-                    <button onClick={toggleLanguage} className='hover:opacity-50' name="Change theme">
+                    <button onClick={toggleLanguage} className='hover:opacity-50' name="Change page language">
                         <span className='text-onSurface-light dark:text-onSurface-dark font-medium text-[1rem]'>
                             {i18n.language == "pt" ? 'PT' : 'EN'}
                         </span>
                         <Translate className='text-onSurface-light dark:text-onSurface-dark m-1' />
                     </button>
-                    <button onClick={darkModeHandler} className='hover:opacity-50' name="Change language">
+                    <button onClick={darkModeHandler} className='hover:opacity-50' name="Change page theme">
                         {!dark && <DarkMode className='text-onSurface-light dark:text-onSurface-dark m-1' />}
                         {dark && <LightMode className='text-onSurface-light dark:text-onSurface-dark m-1' />}
                     </button>

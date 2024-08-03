@@ -27,7 +27,7 @@ function Project({sliderRef}: ProjectProperties) {
     return (
         <section className='flex min-h-[50rem] bg-primary-light p-2 w-full justify-center items-center'>
             <div className='w-[85%] md:w-[80%]'>
-                <Slider ref={sliderRef} {...settings}>
+                <Slider ref={sliderRef} {...settings} accessibility>
                     <CardProject
                         title="app-reactnative-vestibular"
                         image={AppReactnativeVestibular}
