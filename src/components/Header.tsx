@@ -32,7 +32,7 @@ export default function Header() {
         >
             <header className='flex p-2 px-10 items-center min-h-[5rem] space-x-1 bg-surface-light dark:bg-surface-dark'>
                 <nav className='flex-2 flex justify-start items-center'>
-                    <Link to="/web-react-portfolio/" className='hover:opacity-50'>
+                    <Link to="/" className='hover:opacity-50'>
                         <span className='text-primary-light under font-medium text-[2rem] font-[caveat]'>
                             Mateus Pitura
                         </span>

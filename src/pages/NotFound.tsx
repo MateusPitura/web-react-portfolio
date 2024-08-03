@@ -23,7 +23,7 @@ export default function NotFound() {
                         <li className="text-[1rem] w-full">{t('PAGE_NOT_FOUND.LIST.ITEM2')}</li>
                     </ol>
                     <p className="text-[1rem] w-full">
-                        {t('PAGE_NOT_FOUND.PARAGRAPH2')} <Link className="text-primary-light font-normal underline hover:opacity-50" to="/web-react-portfolio/" target='_self'>{t('PAGE_NOT_FOUND.HERE')}</Link>
+                        {t('PAGE_NOT_FOUND.PARAGRAPH2')} <Link className="text-primary-light font-normal underline hover:opacity-50" to="/" target='_self'>{t('PAGE_NOT_FOUND.HERE')}</Link>
                     </p>
                 </main>
                 <Footer />

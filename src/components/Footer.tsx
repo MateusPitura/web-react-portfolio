@@ -14,12 +14,12 @@ export default function Footer() {
           </div>
           <div className="flex flex-wrap flex-1 items-center justify-center">
             <div className='p-2 flex items-center justify-center'>
-              <Link className="text-primary-light font-normal underline hover:opacity-50" to="/web-react-portfolio/terms" target='_self'>
+              <Link className="text-primary-light font-normal underline hover:opacity-50" to="/terms" target='_self'>
               {t('FOOTER.TERMS')}
               </Link>
             </div>
             <div className='p-2 flex items-center justify-center'>
-              <Link className="text-primary-light font-normal underline hover:opacity-50" to="/web-react-portfolio/privacypolicy" target='_self'>
+              <Link className="text-primary-light font-normal underline hover:opacity-50" to="/privacypolicy" target='_self'>
                 {t('FOOTER.PRIVACYPOLICY')} 
               </Link>
             </div>

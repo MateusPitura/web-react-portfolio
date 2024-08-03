@@ -9,9 +9,9 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/web-react-portfolio/" element={<Home />} />
-        <Route path="/web-react-portfolio/terms" element={<Terms />} />
-        <Route path="/web-react-portfolio/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
