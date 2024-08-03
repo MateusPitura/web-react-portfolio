@@ -1,9 +1,9 @@
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import AppReactnativeVestibular from '../assets/images/app-reactnative-vestibular.webp'
-import AppReactNativeCombustivel from '../assets/images/app-reactnative-combustivel.webp'
-import DefaultEmptyProject from '../assets/images/default-empty-project.webp'
+import AppReactnativeVestibular from '../assets/images/app-vestibular-small.webp'
+import AppReactNativeCombustivel from '../assets/images/app-combustivel-small.webp'
+import DefaultEmptyProject from '../assets/images/empty-project-small.webp'
 import CardProject from '../components/CardProject'
 import { badgesSkills } from '../constants/badgesSkills';
 import { useTranslation } from 'react-i18next';

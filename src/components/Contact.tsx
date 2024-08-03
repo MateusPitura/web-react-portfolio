@@ -1,5 +1,5 @@
-import SocialGithubLogo from '../assets/images/social-github-logo.webp'
-import SocialLinkedinLogo from '../assets/images/social-linkedin-logo.webp'
+import SocialGithubLogo from '../assets/images/social-github-small.webp'
+import SocialLinkedinLogo from '../assets/images/social-linkedin-small.webp'
 
 export default function Contact() {
     return (
@@ -7,12 +7,12 @@ export default function Contact() {
             <div className='flex flex-1 flex-wrap min-w-full items-center justify-center gap-10'>
                 <div className='flex-1 p-2 flex items-center justify-center max-w-[15.625rem] min-w-[10rem]'>
                     <a className=" hover:opacity-50" href="https://github.com/MateusPitura" target='_blank' aria-label="Link to Github">
-                        <img src={SocialGithubLogo} alt="Github logo"/>
+                        <img src={SocialGithubLogo} alt="Github logo" width={234} height={78}/>
                     </a>
                 </div>
                 <div className='flex-1 p-2 flex items-center justify-center max-w-[15.625rem] min-w-[10rem]'>
                     <a className=" hover:opacity-50" href="https://www.linkedin.com/in/mateuspitura" target='_blank' aria-label="Link to Linkedin">
-                        <img src={SocialLinkedinLogo} alt="Linkedin logo"/>
+                        <img src={SocialLinkedinLogo} alt="Linkedin logo" width={234} height={78}/>
                     </a>
                 </div>
             </div>

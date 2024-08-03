@@ -68,10 +68,10 @@ function CardStack({ title, badges, sliderRef, isTooltipOpen, setIsTooltipOpen }
               >
                 {index == stacksLastIndex && isTooltipOpen ?
                   <Tooltip open={isTooltipOpen}>
-                    <img className='rounded-lg' src={item.imageUrl} alt={`Stack ${item.reference}`}/>
+                    <img className='rounded-lg' src={item.imageUrl} alt={`Stack ${item.reference}`} height={28}/>
                   </Tooltip>
                   :
-                  <img className='rounded-lg' src={item.imageUrl} alt={`Stack ${item.reference}`}/>
+                  <img className='rounded-lg' src={item.imageUrl} alt={`Stack ${item.reference}`} height={28}/>
                 }
               </button>
             </div>
