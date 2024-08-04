@@ -1,21 +1,24 @@
 import PhotoPerfilLarge from '../assets/images/photo-perfil-large.webp'
 import { useTranslation } from 'react-i18next'
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
+import { Skeleton } from '@mui/material';
 
 function Introduction() {
-    const { t } = useTranslation();     
+    const { t } = useTranslation();
 
     return (
         <section className='flex flex-wrap px-5 pb-20 justify-center w-full'>
             <div className='flex-1 p-2 max-w-[31.25rem] sm:min-w-[25rem] min-w-[18.75rem]'>
-                <div className='border-primary-light border-2 max-w-[6.25rem] relative right-5 top-5'></div>
-                <LazyLoadImage 
+                <div className='border-primary-light border-2 max-w-[6.25rem] relative right-5 top-5 z-10'></div>
+                <LazyLoadImage
                     src={PhotoPerfilLarge}
-                    alt="Perfil picture" 
+                    alt="Perfil picture"
                     className='max-w-full rounded-lg shadow-sm'
                     width={450} height={600}
-                    effect='blur'
+                    effect='opacity'
+                    loading='lazy'
+                    placeholder={<Skeleton height={600} width={450} />}
                 />
             </div>
             <div className='flex-1 p-2 justify-start text-left max-w-[31.25rem] min-w-[18.75rem]'>
