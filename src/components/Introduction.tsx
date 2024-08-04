@@ -3,9 +3,15 @@ import { useTranslation } from 'react-i18next'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import { Skeleton } from '@mui/material';
+import { useEffect } from 'react';
 
 function Introduction() {
     const { t } = useTranslation();
+
+    useEffect(()=>{
+        const img = new Image();
+        img.src = PhotoPerfilLarge
+    }, [])
 
     return (
         <section className='flex flex-wrap px-5 pb-20 justify-center w-full'>
