@@ -17,7 +17,6 @@ function Introduction() {
                     className='max-w-full rounded-lg shadow-sm'
                     width={450} height={600}
                     effect='opacity'
-                    loading='lazy'
                     placeholder={<Skeleton height={600} width={450} />}
                 />
             </div>
