@@ -54,14 +54,17 @@ h1 {
 @font-face {
   font-family: Caveat;
   src: url('/src/assets/font/Caveat-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: UbuntuRegular;
   src: url('/src/assets/font/Ubuntu-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: UbuntuMedium;
   src: url('/src/assets/font/Ubuntu-Medium.ttf');
+  font-display: swap;
 }
