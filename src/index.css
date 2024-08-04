@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Ubuntu, sans-serif;
+  font-family: "UbuntuRegular", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,7 +17,7 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 400;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -41,10 +41,27 @@ h1 {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
+}
+
+@font-face {
+  font-family: Caveat;
+  src: url('/src/assets/font/Caveat-Regular.ttf');
+}
+
+@font-face {
+  font-family: UbuntuRegular;
+  src: url('/src/assets/font/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: UbuntuMedium;
+  src: url('/src/assets/font/Ubuntu-Medium.ttf');
 }

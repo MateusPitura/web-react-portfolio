@@ -34,7 +34,8 @@ export default {
       }
     },
     fontFamily: {
-      'customCaveat': ['"Caveat"', 'Ubuntu', 'sans-serif']
+      'customCaveat': ['"Caveat"', '"UbuntuRegular"', 'sans-serif'],
+      'customUbuntu': ['"UbuntuMedium"', 'sans-serif']
     },
   },
   plugins: [],

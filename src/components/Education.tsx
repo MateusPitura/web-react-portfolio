@@ -40,7 +40,7 @@ function Education() {
                             <a
                                 href='https://catalog-education.oracle.com/pls/certview/sharebadge?id=624E43496DE7A92D339650BEB80BCEFBC9D6B87F214C9C1BA51039E5254F97D5'
                                 target='_blank'
-                                className='hover:opacity-50 hover:text-onSecondary-light underline text-onSecondary-light font-normal'
+                                className='hover:opacity-50 hover:text-onSecondary-light underline text-onSecondary-light'
                             >
                                 OCI Foundations Associate
                             </a>

@@ -34,14 +34,14 @@ export default function Header() {
             <header className='flex p-2 px-10 items-center min-h-[5rem] space-x-1 bg-surface-light dark:bg-surface-dark'>
                 <nav className='flex-2 flex justify-start items-center'>
                     <Link to="/" className='hover:opacity-50'>
-                        <span className='text-primary-light text-[2rem] font-customCaveat font-normal'>
+                        <span className='text-primary-light text-[2rem] font-customCaveat'>
                             Mateus Pitura
                         </span>
                     </Link>
                 </nav>
                 <div className='flex-1 flex justify-end items-center text-center gap-5'>
                     <button onClick={toggleLanguage} className='hover:opacity-50' name="Change page language">
-                        <span className='text-onSurface-light dark:text-onSurface-dark font-medium text-[1rem]'>
+                        <span className='text-onSurface-light dark:text-onSurface-dark font-customUbuntu text-[1rem]'>
                             {i18n.language == "pt" ? 'PT' : 'EN'}
                         </span>
                         <Translate className='text-onSurface-light dark:text-onSurface-dark m-1' />

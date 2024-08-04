@@ -48,7 +48,7 @@ function CardStack({ title, badges, sliderRef, isTooltipOpen, setIsTooltipOpen }
   return (
     <div className='flex-1 flex-wrap min-w-[12.5rem] p-2 m-2'>
       <div className='pb-5'>
-        <span className='text-[1.75rem] text-onSurface-light dark:text-onSurface-dark font-medium'>{title}</span>
+        <span className='text-[1.75rem] text-onSurface-light dark:text-onSurface-dark font-customUbuntu'>{title}</span>
       </div>
       <div className='space-y-3'>
         {badges?.map((item, index) => (

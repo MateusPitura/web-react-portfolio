@@ -14,7 +14,7 @@ function CardProject({ description, image, link, releaseYear, title, badges }: C
     return (
         <div className="flex justify-center">
             <div className='flex bg-surface-light dark:bg-surface-dark w-[56.25rem] rounded-lg justify-center shadow-lg mx-2'>
-                <a className='hover:opacity-50 font-normal p-5' href={link} target='_blank'>
+                <a className='hover:opacity-50 p-5' href={link} target='_blank'>
                     <div>
                         <div className='w-full'>
                             {image &&

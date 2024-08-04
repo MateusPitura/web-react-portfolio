@@ -21,7 +21,7 @@ function JobCard({ company, position, activities, yearFrom, badges }: JobCardPro
             </div>
             <div className="m-2 my-20 space-y-3">
                 <div className='flex items-start' >
-                    <span className='text-[2rem] text-surface-light font-bold '>{company}</span>
+                    <span className='text-[2rem] text-surface-light font-customUbuntu'>{company}</span>
                 </div>
                 <div className='flex items-start'>
                     <span className='text-[1rem] text-surface-light'>{position}</span>
