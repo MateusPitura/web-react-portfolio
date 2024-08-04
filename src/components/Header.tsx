@@ -34,7 +34,7 @@ export default function Header() {
             <header className='flex p-2 px-10 items-center min-h-[5rem] space-x-1 bg-surface-light dark:bg-surface-dark'>
                 <nav className='flex-2 flex justify-start items-center'>
                     <Link to="/" className='hover:opacity-50'>
-                        <span className='text-primary-light under font-medium text-[2rem] font-[caveat]'>
+                        <span className='text-primary-light text-[2rem] font-customCaveat font-normal'>
                             Mateus Pitura
                         </span>
                     </Link>

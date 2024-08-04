@@ -6,7 +6,7 @@ interface CardProjectProperties {
     releaseYear: number;
     description: string;
     link: string;
-    image: string;
+    image?: string;
     badges: Badge[];
 }
 
@@ -17,7 +17,11 @@ function CardProject({ description, image, link, releaseYear, title, badges }: C
                 <a className='hover:opacity-50 font-normal p-5' href={link} target='_blank'>
                     <div>
                         <div className='w-full'>
-                            <img className='rounded-lg' src={image} alt={`Project ${title}`} width={860} height={430}/>
+                            {image ?
+                                <img className='rounded-lg' src={image} alt={`Project ${title}`} width={860} height={430} />
+                                :
+                                <div className="rounded-lg  w-[53.75rem] h-[26.875rem] bg-outline-light"/>
+                            }
                         </div>
                         <div className='flex p-2 mt-2'>
                             <div className='flex-1 flex justify-start'>

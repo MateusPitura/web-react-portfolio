@@ -33,9 +33,9 @@ export default {
         },
       }
     },
-  },
-  fontFamily: {
-    'caveat': ['Caveat', 'sans-serif']
+    fontFamily: {
+      'customCaveat': ['"Caveat"', 'Ubuntu', 'sans-serif']
+    },
   },
   plugins: [],
 }

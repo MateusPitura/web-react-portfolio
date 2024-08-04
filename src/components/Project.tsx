@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AppReactnativeVestibular from '../assets/images/app-vestibular-small.webp'
 import AppReactNativeCombustivel from '../assets/images/app-combustivel-small.webp'
-import DefaultEmptyProject from '../assets/images/empty-project-small.webp'
 import CardProject from '../components/CardProject'
 import { badgesSkills } from '../constants/badgesSkills';
 import { useTranslation } from 'react-i18next';
@@ -27,7 +26,7 @@ function Project({sliderRef}: ProjectProperties) {
     return (
         <section className='flex min-h-[50rem] bg-primary-light p-2 w-full justify-center items-center'>
             <div className='w-[85%] md:w-[80%]'>
-                <Slider ref={sliderRef} {...settings} accessibility={false}>
+                <Slider ref={sliderRef} {...settings}>
                     <CardProject
                         title="app-reactnative-vestibular"
                         image={AppReactnativeVestibular}
@@ -61,7 +60,6 @@ function Project({sliderRef}: ProjectProperties) {
                         releaseYear={2024}
                         description={t('PROJECT.API')}
                         link='https://github.com/MateusPitura/api-spring-vestibular'
-                        image={DefaultEmptyProject}
                         badges={[
                             badgesSkills.SpringBoot,
                             badgesSkills.Java,
