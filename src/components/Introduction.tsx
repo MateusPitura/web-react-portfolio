@@ -1,6 +1,6 @@
-import PhotoPerfilLarge from '../assets/images/photo-perfil-large.webp'
+// import PhotoPerfilLarge from '../assets/images/photo-perfil-large.webp'
 import { useTranslation } from 'react-i18next'
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Introduction() {
     const { t } = useTranslation();
@@ -9,12 +9,12 @@ function Introduction() {
         <section className='flex flex-wrap px-5 pb-20 justify-center w-full'>
             <div className='flex-1 p-2 max-w-[31.25rem] sm:min-w-[25rem] min-w-[18.75rem]'>
                 <div className='border-primary-light border-2 max-w-[6.25rem] relative right-5 top-5 z-10'></div>
-                <LazyLoadImage
+                {/* <LazyLoadImage
                     src={PhotoPerfilLarge}
                     height={600} width={450}
                     alt="Perfil picture"
                     className='rounded-lg shadow-md'
-                />
+                /> */}
             </div>
             <div className='flex-1 p-2 justify-start text-left max-w-[31.25rem] min-w-[18.75rem]'>
                 <span className='text-[2.8125rem] text-primary-light'>Full Stack.</span>
