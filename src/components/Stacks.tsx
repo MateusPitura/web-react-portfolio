@@ -20,6 +20,7 @@ function Stacks({ sliderRef }: ProjectProperties) {
                         badgesSkills.Storybook,
                         badgesSkills.JavaScript,
                         badgesSkills.TypeScript,
+                        badgesSkills.HTML,
                     ]}
                     sliderRef={sliderRef}
                     setIsTooltipOpen={setIsTooltipOpen}
