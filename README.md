@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+<h1 align="center"> 
+  <p>Portfólio</p> 
+</h1> 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p> 
+  <img src="https://img.shields.io/badge/Release-Aug%202024-green">  
+  <img src="https://img.shields.io/badge/Status-Closed-brightgreen">  
+  <img src="https://img.shields.io/github/stars/MateusPitura/web-react-portfolio?style=social"> 
+</p> 
 
-Currently, two official plugins are available:
+> :checkered_flag: Este projeto está finalizado :checkered_flag:  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição 
 
-## Expanding the ESLint configuration
+Bem-vindo ao meu portfólio! Este projeto foi criado para exibir meus trabalhos, habilidades e experiências como desenvolvedor
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Índice 
 
-- Configure the top-level `parserOptions` property like this:
+- [Funcionalidades](#funcionalidades) 
+- [Como executar](#como-executar) 
+- [Tecnologias usadas](#tecnologias-usadas) 
+- [Autores](#autores) 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Funcionalidades 
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+:lock: **HTTPS:** o site possui conexão HTTPS para uma navegação segura
+
+:globe_with_meridians: **Hospedagem:** o site está hospeado com domínio próprio podendo ser acessado de forma fácil
+
+:us: **Tradução:** o site pode ser traduzido para o inglês
+
+## Como executar 
+
+Acesse o site https://pituramateus.cfd/
+
+## Tecnologias usadas 
+
+:heavy_check_mark: React
+
+:heavy_check_mark: Material UI 
+ 
+:heavy_check_mark: Tailwind
+
+## Autores 
+
+| Mateus Pitura | 
+|------| 
+| <p align="center"><img src="https://user-images.githubusercontent.com/119008106/227821967-fac62c31-0d62-485b-829e-ef56c033e21a.jpeg" width="100" height="100"></p> | 
+| <a href="https://www.linkedin.com/in/mateuspitura/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"> |
