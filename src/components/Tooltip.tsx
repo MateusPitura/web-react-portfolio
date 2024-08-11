@@ -24,7 +24,11 @@ export default function CustomTooltip({ open, children }: CustomTooltipPropertie
 
     return (
         <TooltipStyled
-            title={t('STACKS.TOOLTIP')}
+            title={
+                <span className='font-customUbuntu'>
+                    {t('STACKS.TOOLTIP')}
+                </span>
+            }
             open={open}
             placement='bottom-end'
             arrow
