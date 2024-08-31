@@ -63,7 +63,6 @@ function Stacks({ sliderRef }: ProjectProperties) {
                         badgesSkills.OCI,
                         badgesSkills.AWS,
                         badgesSkills.Terraform,
-                        badgesSkills.Docker
                     ]}
                     sliderRef={sliderRef}
                     setIsTooltipOpen={setIsTooltipOpen}
