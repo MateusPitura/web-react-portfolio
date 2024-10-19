@@ -10,7 +10,7 @@ import Slider from 'react-slick'
 
 function Home() {
 
-  const sliderRef = useRef<Slider>(null);
+  const sliderRef = useRef<Slider>(null)
 
   return (
     <>
