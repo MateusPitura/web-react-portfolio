@@ -19,10 +19,10 @@ function Introduction() {
                 <span className='text-[2.8125rem] text-primary-light'>Full Stack.</span>
                 <div className='mb-10 relative right-0 md:right-16'>
                     <div className='mb-2'>
-                        <span className='p-2 bg-secondary-light tracking-widest text-[3.5625rem] text-surface-light shadow-lg'>MATEUS</span>
+                        <strong className='p-2 bg-secondary-light tracking-widest text-[3.5625rem] text-surface-light shadow-lg'>MATEUS</strong>
                     </div>
                     <div className='mt-2'>
-                        <span className='p-2 bg-secondary-light tracking-widest text-[3.5625rem] text-surface-light shadow-lg'>PITURA</span>
+                        <strong className='p-2 bg-secondary-light tracking-widest text-[3.5625rem] text-surface-light shadow-lg'>PITURA</strong>
                     </div>
                 </div>
                 <div>
