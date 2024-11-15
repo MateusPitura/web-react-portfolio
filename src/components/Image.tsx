@@ -4,6 +4,7 @@ interface ImageProperties {
   alt: string;
   width: number;
   height: number;
+  lazy?: boolean;
 }
 
 export default function Image({
@@ -12,8 +13,9 @@ export default function Image({
   alt,
   width,
   height,
+  lazy = false,
 }: ImageProperties) {
-  return (
+  return imgSmall ? (
     <picture>
       <source srcSet={imgLarge} media="(min-width: 425px)" />
       <img
@@ -22,7 +24,17 @@ export default function Image({
         className="flex rounded-lg shadow-md"
         height={height}
         width={width}
+        loading={lazy ? "lazy" : undefined}
       />
     </picture>
+  ) : (
+    <img
+      src={imgLarge}
+      alt={alt}
+      className="flex rounded-lg shadow-md"
+      height={height}
+      width={width}
+      loading={lazy ? "lazy" : undefined}
+    />
   );
 }

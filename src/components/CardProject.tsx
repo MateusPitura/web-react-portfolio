@@ -43,6 +43,7 @@ function CardProject({
                     alt="Photo Perfil"
                     width={860}
                     height={430}
+                    lazy
                   />
                 </Suspense>
               )}

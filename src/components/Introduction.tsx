@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import React, { Suspense } from "react";
 import ImageLoading from "./ImageLoading";
 import PhotoPerfilLarge from "../assets/images/photo-perfil-large.webp";
-import PhotoPerfilSmall from "../assets/images/photo-perfil-small.webp";
 
 const ImageLazy = React.lazy(() => import("./Image"));
 
@@ -17,7 +16,6 @@ function Introduction() {
           fallback={<ImageLoading className="aspect-[450/600] max-w-[450px]" />}
         >
           <ImageLazy
-            imgSmall={PhotoPerfilSmall}
             imgLarge={PhotoPerfilLarge}
             alt="Photo Perfil"
             width={450}
