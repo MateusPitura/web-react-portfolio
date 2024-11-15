@@ -13,6 +13,17 @@
       name="description"
       content="Olá! Me chamo Mateus Pitura, tenho interesse em criar soluções e resolver problemas de forma eficiente usando meu conhecimento em Engenharia de Software"
     />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+      default-src 'self' https://metrics.hotjar.io/; 
+      img-src 'self' https://img.shields.io/ data:;
+      script-src 'self' 'unsafe-inline' https://static.hotjar.com/;
+      style-src 'self' 'unsafe-inline';
+      font-src 'self' data:;
+    "
+    />
+    <!-- Hotjar -->
     <script>
       (function (h, o, t, j, a, r) {
         h.hj =
@@ -28,11 +39,6 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2000576373931056"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <div id="root"></div>
