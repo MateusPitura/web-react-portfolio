@@ -1,5 +1,6 @@
-import Badges from "./Badges";
+import React, { Suspense } from "react";
 import { Badge } from "../types/Badge";
+import BadgeLoading from "./BadgeLoading";
 
 interface JobCardProperties {
   company: string;
@@ -7,6 +8,8 @@ interface JobCardProperties {
   activities: string[];
   badges: Badge[];
 }
+
+const BadgeLazy = React.lazy(() => import("./Badges"));
 
 function JobCard({ company, position, activities, badges }: JobCardProperties) {
   return (
@@ -28,7 +31,13 @@ function JobCard({ company, position, activities, badges }: JobCardProperties) {
             {item}
           </span>
         ))}
-        <Badges badges={badges} />
+        <div className="w-full pt-5 flex flex-wrap gap-1">
+          <Suspense fallback={<BadgeLoading />}>
+            {badges?.map((badge) => (
+              <BadgeLazy badge={badge} />
+            ))}
+          </Suspense>
+        </div>
       </div>
     </div>
   );

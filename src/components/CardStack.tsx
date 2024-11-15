@@ -1,8 +1,9 @@
 import { Divider } from "@mui/material";
-import { ReactNode, RefObject } from "react";
-import { Badge } from "../types/Badge";
-import Tooltip from "./Tooltip";
+import React, { ReactNode, RefObject, Suspense } from "react";
 import Slider from "react-slick";
+import { Badge } from "../types/Badge";
+import BadgeLoading from "./BadgeLoading";
+import Tooltip from "./Tooltip";
 
 interface CardStackProperties {
   title: string | ReactNode;
@@ -11,6 +12,8 @@ interface CardStackProperties {
   isTooltipOpen?: boolean;
   setIsTooltipOpen: (state: boolean) => void;
 }
+
+const BadgeLazy = React.lazy(() => import("./Badges"));
 
 const scrollToElement = (id: string) => {
   const element = document.getElementById(id);
@@ -73,21 +76,19 @@ function CardStack({
                   scrollToElement(item.reference);
                 }}
               >
-                {index == stacksLastIndex && isTooltipOpen ? (
-                  <Tooltip open={isTooltipOpen}>
-                    <img
-                      className="rounded-lg h-[1.75rem] w-full"
-                      src={item.imageUrl}
-                      alt={`Stack ${item.reference}`}
-                    />
-                  </Tooltip>
-                ) : (
-                  <img
-                    className="rounded-lg h-[1.75rem] w-full"
-                    src={item.imageUrl}
-                    alt={`Stack ${item.reference}`}
-                  />
-                )}
+                <div className="w-full flex flex-wrap gap-1">
+                  {index == stacksLastIndex && isTooltipOpen ? (
+                    <Tooltip open={isTooltipOpen}>
+                      <Suspense fallback={<BadgeLoading key={item.id} />}>
+                        <BadgeLazy badge={item} />
+                      </Suspense>
+                    </Tooltip>
+                  ) : (
+                    <Suspense fallback={<BadgeLoading key={item.id} />}>
+                      <BadgeLazy badge={item} />
+                    </Suspense>
+                  )}
+                </div>
               </button>
             </div>
             {index != stacksLastIndex && (

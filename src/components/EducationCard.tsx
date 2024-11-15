@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import Badges from "./Badges";
 import { Badge } from "../types/Badge";
 
 interface EducationCardProperties {
@@ -17,7 +16,6 @@ function EducationCard({
   fromTo,
   school,
   isLarge,
-  badges,
 }: EducationCardProperties) {
   return isLarge ? (
     <div className="flex w-full mx-2 min-h-[25rem] justify-center">
@@ -42,7 +40,6 @@ function EducationCard({
                 {item}
               </span>
             ))}
-            <Badges badges={badges} />
           </div>
         </div>
       </div>
@@ -73,7 +70,6 @@ function EducationCard({
                 {item}
               </span>
             ))}
-            <Badges badges={badges} />
           </div>
         </div>
       </div>

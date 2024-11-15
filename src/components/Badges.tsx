@@ -1,24 +1,18 @@
 import { Badge } from "../types/Badge";
 
 interface BadgesProperties {
-  badges?: Badge[];
+  badge: Badge;
 }
 
-function Badges({ badges }: BadgesProperties) {
+function Badges({ badge }: BadgesProperties) {
   return (
-    <div className="pt-5 flex flex-wrap gap-1 w-full">
-      {badges?.map((item) => (
-        <div key={item.id}>
-          <div className="flex justify-center flex-wrap">
-            <img
-              id={item.reference}
-              className="rounded-lg h-[1.75rem] w-full"
-              src={item.imageUrl}
-              alt={`Stack ${item.reference}`}
-            />
-          </div>
-        </div>
-      ))}
+    <div className="flex justify-center items-center">
+      <img
+        id={badge.reference}
+        className="rounded-lg h-[1.75rem] w-full"
+        src={badge.imageUrl}
+        alt={`Stack ${badge.reference}`}
+      />
     </div>
   );
 }
