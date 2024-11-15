@@ -1,7 +1,7 @@
 import { RefObject, useState } from 'react';
-import CardStack from '../components/CardStack'
-import { badgesSkills } from '../constants/badgesSkills';
 import Slider from 'react-slick';
+import CardStack from '../components/CardStack';
+import { badgesSkills } from '../constants/badgesSkills';
 
 interface ProjectProperties {
     sliderRef: RefObject<Slider>;

@@ -1,12 +1,11 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Slider from "react-slick";
 import Contact from "../components/Contact";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
+import Project from "../components/Project";
 import Introduction from "../components/Introduction";
 import Stacks from "../components/Stacks";
-
-const ProjectLazy = React.lazy(() => import("../components/Project"));
 
 function Home() {
   const sliderRef = useRef<Slider>(null);
@@ -17,7 +16,7 @@ function Home() {
         <Introduction />
         <Experience />
         <Education />
-        <ProjectLazy sliderRef={sliderRef} />
+        <Project sliderRef={sliderRef} />
         <Contact />
         <Stacks sliderRef={sliderRef} />
       </main>
