@@ -57,7 +57,7 @@ function CardStack({
   return (
     <div className="flex-1 flex-wrap min-w-[12.5rem] p-2 m-2">
       <div className="pb-5">
-        <span className="text-[1.75rem] text-onSurface-light dark:text-onSurface-dark font-customUbuntu">
+        <span className="text-[1.75rem] text-onSurface-light dark:text-onSurface-dark font-customUbuntu justify-center flex">
           {title}
         </span>
       </div>
@@ -79,9 +79,11 @@ function CardStack({
                 <div className="w-full flex flex-wrap gap-1">
                   {index == stacksLastIndex && isTooltipOpen ? (
                     <Tooltip open={isTooltipOpen}>
-                      <Suspense fallback={<BadgeLoading key={item.id} />}>
-                        <BadgeLazy badge={item} />
-                      </Suspense>
+                      <div>
+                        <Suspense fallback={<BadgeLoading key={item.id} />}>
+                          <BadgeLazy badge={item} />
+                        </Suspense>
+                      </div>
                     </Tooltip>
                   ) : (
                     <Suspense fallback={<BadgeLoading key={item.id} />}>

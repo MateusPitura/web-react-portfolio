@@ -57,7 +57,7 @@ function EducationCard({
             </span>
           </div>
           <div>
-            <span className="flex flex-1 justify-center text-[1.5rem] text-onSecondary-light min-h-[4.6875rem]">
+            <span className="flex flex-1 justify-center text-[1.5rem] text-onSecondary-light min-h-[4.6875rem] text-center">
               {course}
             </span>
           </div>
