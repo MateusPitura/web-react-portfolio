@@ -34,7 +34,7 @@ function JobCard({ company, position, activities, badges }: JobCardProperties) {
         <div className="w-full pt-5 flex flex-wrap gap-1">
           <Suspense fallback={<BadgeLoading />}>
             {badges?.map((badge) => (
-              <BadgeLazy badge={badge} />
+              <BadgeLazy badge={badge} key={badge.id}/>
             ))}
           </Suspense>
         </div>
