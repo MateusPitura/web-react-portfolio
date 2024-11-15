@@ -22,6 +22,7 @@ function Project({sliderRef}: ProjectProperties) {
         slidesToScroll: 1,
         prevArrow: <Arrow />,
         nextArrow: <Arrow next />,
+        useTransform: false,
     };
 
     const { t } = useTranslation();
