@@ -10,7 +10,6 @@ const TooltipStyled = styled(({ className, ...props }: TooltipProps) => (
         maxWidth: 250,
         fontSize: '1rem',
         fontFamily: 'Ubuntu, sans-serif',
-        boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'
     },
 });
 
