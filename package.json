@@ -17,6 +17,7 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.5",
     "@mui/material": "^5.16.5",
+    "@radix-ui/react-tooltip": "^1.1.4",
     "@types/react-router-dom": "^5.3.3",
     "i18next": "^23.12.2",
     "react": "^18.3.1",
