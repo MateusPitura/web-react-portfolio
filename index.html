@@ -17,10 +17,11 @@
       http-equiv="Content-Security-Policy"
       content="
       default-src 'self'; 
-      img-src 'self' https://img.shields.io/ data:;
-      script-src 'self' https://*.hotjar.com https://*.hotjar.io wss://*.hotjar.com 'unsafe-inline';
-      style-src 'self' 'unsafe-inline';
-      font-src 'self' data:;
+      img-src 'self' https://img.shields.io/ data: https://*.hotjar.com;
+      script-src 'self' https://*.hotjar.com 'unsafe-inline';
+      connect-src 'self' https://*.hotjar.com https://*.hotjar.io wss://*.hotjar.com;
+      style-src 'self' https://*.hotjar.com 'unsafe-inline';
+      font-src 'self' data: https://*.hotjar.com;
     "
     />
     <link
