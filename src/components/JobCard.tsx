@@ -16,7 +16,7 @@ function JobCard({ company, position, activities, yearFrom, badges }: JobCardPro
                 <div className='my-5 text-[2rem] text-outline-light min-w-[4.6875rem]'>{yearFrom}</div>
             </div>
             <div className='min-w-[1.25rem] flex justify-center'>
-                <div className='bg-surface-light min-heigth-[6.25rem] w-[0.25rem]'>
+                <div className='bg-surface-light dark:bg-surface-dark min-heigth-[6.25rem] w-[0.25rem]'>
                 </div>
             </div>
             <div className="m-2 my-20 space-y-3">

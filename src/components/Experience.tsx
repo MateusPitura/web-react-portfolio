@@ -66,7 +66,7 @@ function Experience() {
                         <div className='my-10 min-w-[4.6875rem]' />
                     </div>
                     <div className='min-w-[1.25rem] flex justify-center'>
-                        <div className='bg-gradient-to-b from-surface-light to-secondary-light min-heigth-[6.25rem] w-[0.25rem]'></div>
+                        <div className='bg-gradient-to-b from-surface-light dark:from-surface-dark to-secondary-light min-heigth-[6.25rem] w-[0.25rem]'></div>
                     </div>
                 </div>
             </div>
