@@ -20,7 +20,7 @@ function Education() {
       <section className="w-full mb-10">
         <div className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] w-[60%] gap-2 m-auto max-w-[62.5rem]">
           <EducationCard
-            school="Onebitcode"
+            school="Programador BR"
             fromTo="2024"
             course="Full Stack JavaScript"
           />

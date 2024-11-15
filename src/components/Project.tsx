@@ -36,7 +36,6 @@ function Project({sliderRef}: ProjectProperties) {
                         badges={[
                             badgesSkills.ReactNative,
                             badgesSkills.CSS,
-                            badgesSkills.Android,
                             badgesSkills.Git,
                             badgesSkills.Figma,
                         ]}
@@ -50,7 +49,6 @@ function Project({sliderRef}: ProjectProperties) {
                         badges={[
                             badgesSkills.ReactNative,
                             badgesSkills.CSS,
-                            badgesSkills.Android,
                             badgesSkills.Git,
                             badgesSkills.Figma,
                         ]}
@@ -64,7 +62,6 @@ function Project({sliderRef}: ProjectProperties) {
                             badgesSkills.SpringBoot,
                             badgesSkills.Java,
                             badgesSkills.RESTfulAPI,
-                            badgesSkills.Postman,
                             badgesSkills.Git,
                             badgesSkills.OCI,
                             badgesSkills.Linux,

@@ -42,8 +42,7 @@ function Stacks({ sliderRef }: ProjectProperties) {
                         badgesSkills.SpringBoot,
                         badgesSkills.Java,
                         badgesSkills.RESTfulAPI,
-                        badgesSkills.GraphQL,
-                        badgesSkills.Postman,
+                        badgesSkills.GraphQL
                     ]}
                     sliderRef={sliderRef}
                     setIsTooltipOpen={setIsTooltipOpen}
@@ -71,7 +70,6 @@ function Stacks({ sliderRef }: ProjectProperties) {
                     title='Mobile'
                     badges={[
                         badgesSkills.ReactNative,
-                        badgesSkills.Android,
                     ]}
                     sliderRef={sliderRef}
                     setIsTooltipOpen={setIsTooltipOpen}
