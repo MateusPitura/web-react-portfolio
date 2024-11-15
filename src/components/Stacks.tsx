@@ -12,7 +12,7 @@ function Stacks({ sliderRef }: ProjectProperties) {
 
     return (
         <section className='min-h-[25rem] w-full p-2 py-20'>
-            <div className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] w-[60%] gap-5 m-auto'>
+            <div className='sm:grid md:grid-cols-2 lg:grid-cols-4 w-[80%] gap-5 m-auto'>
                 <CardStack
                     title='Front-End'
                     badges={[

@@ -7,6 +7,7 @@ import CardProject from '../components/CardProject'
 import { badgesSkills } from '../constants/badgesSkills';
 import { useTranslation } from 'react-i18next';
 import { RefObject } from 'react';
+import Arrow from './Arrow';
 
 interface ProjectProperties {
     sliderRef: RefObject<Slider>;
@@ -18,14 +19,16 @@ function Project({sliderRef}: ProjectProperties) {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        prevArrow: <Arrow />,
+        nextArrow: <Arrow next />,
     };
 
     const { t } = useTranslation();
 
     return (
         <section className='flex min-h-[50rem] bg-primary-light p-2 w-full justify-center items-center'>
-            <div className='w-[85%] md:w-[80%]'>
+            <div className='w-full sm:w-[80%]'>
                 <Slider ref={sliderRef} {...settings}>
                     <CardProject
                         title="app-reactnative-vestibular"

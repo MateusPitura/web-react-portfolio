@@ -14,18 +14,18 @@ function CardProject({ description, image, link, releaseYear, title, badges }: C
     return (
         <div className="flex justify-center">
             <div className='flex bg-surface-light dark:bg-surface-dark w-[56.25rem] rounded-lg justify-center shadow-lg mx-2'>
-                <a className='hover:opacity-50 p-5' href={link} target='_blank'>
+                <a className='hover:opacity-50 p-3 sm:p-5' href={link} target='_blank'>
                     <div>
                         <div className='w-full'>
                             {image &&
                                 <img className='rounded-lg' src={image} alt={`Project ${title}`} width={860} height={430} />
                             }
                         </div>
-                        <div className='flex p-2 mt-2'>
-                            <div className='flex-1 flex justify-start'>
+                        <div className='block sm:flex p-2 mt-2'>
+                            <div className='flex-2 flex justify-start'>
                                 <span className='text-[1.5rem] text-onSurface-light dark:text-onSurface-dark'>{title}</span>
                             </div>
-                            <div className='flex-1 flex justify-end'>
+                            <div className='flex-1 flex sm:justify-end'>
                                 <span className='text-[1.5rem] text-outline-light'>{releaseYear}</span>
                             </div>
                         </div>

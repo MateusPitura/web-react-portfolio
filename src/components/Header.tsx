@@ -31,7 +31,7 @@ export default function Header() {
                 zIndex: 1501,
             }}
         >
-            <header className='flex p-2 px-10 items-center min-h-[5rem] space-x-1 bg-surface-light dark:bg-surface-dark'>
+            <header className='flex p-2 sm:px-10 items-center min-h-[5rem] space-x-1 bg-surface-light dark:bg-surface-dark'>
                 <nav className='flex-2 flex justify-start items-center'>
                     <Link to="/" className='hover:opacity-50'>
                         <span className='text-primary-light text-[2rem] font-customCaveat'>

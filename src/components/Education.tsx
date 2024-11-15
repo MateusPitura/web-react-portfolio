@@ -17,8 +17,8 @@ function Education() {
         ]}
         isLarge
       />
-      <section className="w-full mb-10">
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] w-[60%] gap-2 m-auto max-w-[62.5rem]">
+      <section className="w-full mb-10 flex items-center justify-center">
+        <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 gap-2">
           <EducationCard
             school="Programador BR"
             fromTo="2024"
