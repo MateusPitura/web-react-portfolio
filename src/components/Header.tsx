@@ -2,8 +2,8 @@ import { AppBar, Divider } from "@mui/material";
 import { Translate, DarkMode, LightMode } from "@mui/icons-material";
 import "../i18n";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import Name from "./Name";
 
 export default function Header() {
   const { i18n } = useTranslation();
@@ -32,13 +32,7 @@ export default function Header() {
       }}
     >
       <header className="flex p-2 sm:px-10 items-center min-h-[5rem] space-x-1 bg-surface-light dark:bg-surface-dark">
-        <nav className="flex-2 flex justify-start items-center">
-          <Link to="/" className="hover:opacity-50">
-            <span className="text-primary-light text-[2rem] font-customCaveat">
-              Mateus Pitura
-            </span>
-          </Link>
-        </nav>
+        <Name />
         <div className="flex-1 flex justify-end items-center text-center gap-5">
           <button
             onClick={toggleLanguage}
