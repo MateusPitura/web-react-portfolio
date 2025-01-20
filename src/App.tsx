@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -12,7 +12,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <HashRouter>
       <Header />
       <Suspense fallback={<Loading />}>
         <Routes>
@@ -23,7 +23,7 @@ const App: React.FC = () => {
         </Routes>
       </Suspense>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 };
 
