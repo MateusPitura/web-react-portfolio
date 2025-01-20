@@ -1,6 +1,8 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Badge } from "../types/Badge";
 import BadgeLoading from "./BadgeLoading";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface JobCardProperties {
   company: string;
@@ -12,8 +14,16 @@ interface JobCardProperties {
 const BadgeLazy = React.lazy(() => import("./Badges"));
 
 function JobCard({ company, position, activities, badges }: JobCardProperties) {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className="sm:max-w-[28.125rem] m-2 sm:my-20 space-y-3">
+    <div
+      className="sm:max-w-[28.125rem] m-2 sm:my-20 space-y-3"
+      data-aos="fade-up"
+    >
       <div className="flex items-start">
         <span className="text-[2rem] text-surface-light font-customUbuntu">
           {company}
@@ -34,7 +44,7 @@ function JobCard({ company, position, activities, badges }: JobCardProperties) {
         <div className="w-full pt-5 flex flex-wrap gap-1">
           <Suspense fallback={<BadgeLoading />}>
             {badges?.map((badge) => (
-              <BadgeLazy badge={badge} key={badge.id}/>
+              <BadgeLazy badge={badge} key={badge.id} />
             ))}
           </Suspense>
         </div>

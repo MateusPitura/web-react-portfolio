@@ -29,6 +29,11 @@
       type="image/x-icon"
       href="/src/assets/images/favicon.ico"
     />
+    <script>
+      if (!location.hash) {
+        location.replace(location.href + "#/");
+      }
+    </script>
     <!-- Hotjar -->
     <script>
       (function (h, o, t, j, a, r) {

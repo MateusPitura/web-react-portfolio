@@ -23,7 +23,7 @@ export default function CustomTooltip({
             side="bottom"
           >
             <Tooltip.Arrow className="fill-neutral-700"/>
-            <span className="font-customUbuntu">{t("STACKS.TOOLTIP")}</span>
+            <span className="font-customUbuntu text-white">{t("STACKS.TOOLTIP")}</span>
           </Tooltip.Content>
         </Tooltip.Portal>
       </Tooltip.Root>

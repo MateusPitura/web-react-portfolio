@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mateuspitura.github.io/web-react-portfolio/#",
+  "homepage": "https://mateuspitura.github.io/web-react-portfolio/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -19,6 +19,7 @@
     "@mui/material": "^5.16.5",
     "@radix-ui/react-tooltip": "^1.1.4",
     "@types/react-router-dom": "^5.3.3",
+    "aos": "^2.3.4",
     "i18next": "^23.12.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -28,6 +29,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-slick": "^0.23.13",
