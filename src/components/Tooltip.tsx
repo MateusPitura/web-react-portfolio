@@ -16,14 +16,14 @@ export default function CustomTooltip({
   return (
     <Tooltip.Provider>
       <Tooltip.Root open={open}>
-        <Tooltip.Trigger>{children}</Tooltip.Trigger>
+        <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
         <Tooltip.Portal>
           <Tooltip.Content
             className="bg-neutral-700 p-2 rounded-md max-w-[250px]"
             side="bottom"
           >
             <Tooltip.Arrow className="fill-neutral-700"/>
-            <span className="font-customUbuntu text-white">{t("STACKS.TOOLTIP")}</span>
+            <span className="font-medium text-white">{t("STACKS.TOOLTIP")}</span>
           </Tooltip.Content>
         </Tooltip.Portal>
       </Tooltip.Root>

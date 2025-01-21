@@ -25,18 +25,18 @@ function JobCard({ company, position, activities, badges }: JobCardProperties) {
       data-aos="fade-up"
     >
       <div className="flex items-start">
-        <span className="text-[2rem] text-surface-light font-customUbuntu">
+        <span className="text-[2rem] text-surface-light font-bold tracking-wide">
           {company}
         </span>
       </div>
       <div className="flex items-start">
-        <span className="text-[1rem] text-surface-light">{position}</span>
+        <span className="text-[1rem] font-semibold text-primary-light tracking-wide">{position}</span>
       </div>
       <div className="flex flex-wrap text-left bg-surface-light dark:bg-surface-dark p-4 rounded-lg space-y-1">
         {activities.map((item, index) => (
           <span
             key={index}
-            className="text-onSurface-light dark:text-onSurface-dark text-[0.875rem]"
+            className="text-onSurface-light dark:text-onSurface-dark text-[1rem]"
           >
             {item}
           </span>

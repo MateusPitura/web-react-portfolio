@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  font-family: "UbuntuRegular", sans-serif;
+  font-family: Inter, Arial, sans-serif;
   line-height: 1.5;
+  font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -29,22 +30,4 @@ body {
     opacity: 0.5;
     transform: scale(1.05);
   }
-}
-
-@font-face {
-  font-family: Caveat;
-  src: url('/src/assets/font/Caveat-Regular.ttf');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: UbuntuRegular;
-  src: url('/src/assets/font/Ubuntu-Regular.ttf');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: UbuntuMedium;
-  src: url('/src/assets/font/Ubuntu-Medium.ttf');
-  font-display: swap;
 }
