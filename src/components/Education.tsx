@@ -20,7 +20,7 @@ function Education() {
       <section className="w-full mb-10 flex items-center justify-center">
         <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 gap-2">
           <EducationCard
-            school="Programador BR"
+            school="OneBitCode"
             fromTo="2024"
             course="Full Stack JavaScript"
           />

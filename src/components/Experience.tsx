@@ -46,7 +46,6 @@ function Experience() {
         badges={[
           badgesSkills.React,
           badgesSkills.TypeScript,
-          badgesSkills.JavaScript,
           badgesSkills.Tailwind,
           badgesSkills.CSS,
           badgesSkills.HTML,
@@ -57,6 +56,9 @@ function Experience() {
           badgesSkills.GraphQL,
           badgesSkills.Storybook,
           badgesSkills.Terraform,
+          badgesSkills.Node,
+          badgesSkills.DYNAMODB,
+          badgesSkills.RDS,
         ]}
       />
     </section>

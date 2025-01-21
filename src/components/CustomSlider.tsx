@@ -66,7 +66,6 @@ export default function CustomSlider({ sliderRef }: CustomSliderProperties) {
         link="https://github.com/MateusPitura/api-spring-vestibular"
         badges={[
           badgesSkills.SpringBoot,
-          badgesSkills.Java,
           badgesSkills.RESTfulAPI,
           badgesSkills.Git,
           badgesSkills.OCI,

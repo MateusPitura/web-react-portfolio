@@ -17,9 +17,8 @@ function Stacks({ sliderRef }: ProjectProperties) {
                     title='Front-End'
                     badges={[
                         badgesSkills.React,
-                        badgesSkills.Storybook,
-                        badgesSkills.JavaScript,
                         badgesSkills.TypeScript,
+                        badgesSkills.Storybook,
                         badgesSkills.HTML,
                     ]}
                     sliderRef={sliderRef}
@@ -39,10 +38,10 @@ function Stacks({ sliderRef }: ProjectProperties) {
                 <CardStack
                     title='Back-End'
                     badges={[
-                        badgesSkills.SpringBoot,
-                        badgesSkills.Java,
+                        badgesSkills.GraphQL,
+                        badgesSkills.Node,
                         badgesSkills.RESTfulAPI,
-                        badgesSkills.GraphQL
+                        badgesSkills.SpringBoot,
                     ]}
                     sliderRef={sliderRef}
                     setIsTooltipOpen={setIsTooltipOpen}
@@ -51,6 +50,8 @@ function Stacks({ sliderRef }: ProjectProperties) {
                     title='Database'
                     badges={[
                         badgesSkills.MySQL,
+                        badgesSkills.RDS,
+                        badgesSkills.DYNAMODB,
                         badgesSkills.Oracle,
                     ]}
                     sliderRef={sliderRef}
