@@ -4,6 +4,7 @@ import "../i18n";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Logo from "../assets/images/logo.webp";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const { i18n } = useTranslation();
@@ -32,13 +33,15 @@ export default function Header() {
       }}
     >
       <header className="flex p-2 sm:px-10 items-center min-h-[5rem] space-x-1 bg-surface-light dark:bg-surface-dark">
-        <img
-          src={Logo}
-          alt="Page logo"
-          width={150}
-          height={45}
-          loading="lazy"
-        />
+        <Link to="/" className="hover:opacity-50">
+          <img
+            src={Logo}
+            alt="Page logo"
+            width={150}
+            height={45}
+            loading="lazy"
+          />
+        </Link>
         <div className="flex-1 flex justify-end items-center text-center gap-5">
           <button
             onClick={toggleLanguage}
