@@ -1,32 +1,31 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { combine, persist } from "zustand/middleware";
 
-interface GlobalStoreProps {
-  showTooltip: boolean;
-  toggleShowTooltip: (newState: boolean) => void;
-  isDarkMode: boolean;
-  toggleIsDarkMode: () => void;
-  language: string;
-  toggleLanguage: () => void;
-}
-
-export const useGlobalStore = create<GlobalStoreProps>()(
+export const useGlobalStore = create(
   persist(
-    (set) => ({
-      showTooltip: true,
-      isDarkMode: false,
-      toggleShowTooltip: (newState: boolean) => set({ showTooltip: newState }),
-      toggleIsDarkMode: () =>
-        set((state) => ({
-          isDarkMode: !state.isDarkMode,
-        })),
-      language: "en",
-      toggleLanguage: () =>
-        set((state) => ({ language: state.language === "pt" ? "en" : "pt" })),
-    }),
+    combine(
+      {
+        showTooltip: true,
+        isDarkMode: false,
+        language: "en",
+      },
+      (set) => ({
+        toggleShowTooltip: (newState: boolean) =>
+          set({ showTooltip: newState }),
+        toggleIsDarkMode: () =>
+          set((state) => ({
+            isDarkMode: !state.isDarkMode,
+          })),
+        toggleLanguage: () =>
+          set((state) => ({ language: state.language === "pt" ? "en" : "pt" })),
+      })
+    ),
     {
       name: "globalStore",
-      partialize: (state) => ({ isDarkMode: state.isDarkMode, language: state.language }),
+      partialize: (state) => ({
+        isDarkMode: state.isDarkMode,
+        language: state.language,
+      }),
     }
   )
 );
