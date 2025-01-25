@@ -2,26 +2,31 @@ import { AppBar, Divider } from "@mui/material";
 import { Translate, DarkMode, LightMode } from "@mui/icons-material";
 import "../i18n";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
 import Logo from "../assets/images/logo.webp";
 import { Link } from "react-router-dom";
+import { useGlobalStore } from "../store/globalStore";
+import { useEffect } from "react";
 
 export default function Header() {
   const { i18n } = useTranslation();
-  const [dark, setDark] = useState(false);
+  const { isDarkMode, toggleIsDarkMode, language, toggleLanguage } =
+    useGlobalStore();
 
-  const darkModeHandler = () => {
-    setDark(!dark);
-    document.body.classList.toggle("dark");
-  };
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add("dark");
+      return;
+    }
+    document.body.classList.remove("dark");
+  }, [isDarkMode]);
 
-  const toggleLanguage = () => {
-    if (i18n.language === "pt") {
+  useEffect(() => {
+    if (language === "pt") {
       i18n.changeLanguage("en");
       return;
     }
     i18n.changeLanguage("pt");
-  };
+  }, [language]);
 
   return (
     <AppBar
@@ -55,10 +60,10 @@ export default function Header() {
           </button>
           <button
             aria-label="LightMode change"
-            onClick={darkModeHandler}
+            onClick={toggleIsDarkMode}
             className="hover:opacity-50"
           >
-            {dark ? (
+            {isDarkMode ? (
               <LightMode className="text-onSurface-light dark:text-onSurface-dark m-1" />
             ) : (
               <DarkMode className="text-onSurface-light dark:text-onSurface-dark m-1" />
