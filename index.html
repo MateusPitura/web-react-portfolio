@@ -6,7 +6,7 @@
     <title>Mateus Pitura</title>
     <meta
       name="description"
-      content="Olá! Me chamo Mateus Pitura, tenho interesse em criar soluções e resolver problemas de forma eficiente usando meu conhecimento em Engenharia de Software"
+      content="Desenvolvedor Full Stack e acadêmico em Engenharia de Software pela UEPG, trabalho atualmente criando e mantendo aplicações Web"
     />
     <link
       rel="preload"
@@ -29,10 +29,24 @@
       type="image/x-icon"
       href="/src/assets/images/favicon.ico"
     />
-    <script>
-      if (!location.hash) {
-        location.replace(location.href + "#/");
-      }
+    <!-- GitHub Pages -->
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
     </script>
     <!-- Hotjar -->
     <script>
