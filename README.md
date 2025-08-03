@@ -25,7 +25,7 @@ Bem-vindo ao meu portfólio! Este projeto foi criado para exibir meus trabalhos,
 
 :lock: **HTTPS:** o site possui conexão HTTPS para uma navegação segura
 
-:globe_with_meridians: **Hospedagem:** o site está hospeado com domínio próprio podendo ser acessado de forma fácil
+:globe_with_meridians: **Hospedagem:** o site está hospedado com domínio próprio podendo ser acessado de forma fácil
 
 :us: **Tradução:** o site pode ser traduzido para o inglês
 
