@@ -31,7 +31,7 @@ Bem-vindo ao meu portfólio! Este projeto foi criado para exibir meus trabalhos,
 
 ## Como executar 
 
-Acesse o site https://pituramateus.cfd/
+Acesse o site https://mateuspitura.github.io/web-react-portfolio/
 
 ## Tecnologias usadas 
 
