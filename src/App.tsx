@@ -12,7 +12,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/web-react-portfolio">
       <Header />
       <Suspense fallback={<Loading />}>
         <Routes>
