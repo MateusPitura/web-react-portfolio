@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="p-2 flex items-center justify-center">
             <button
               className="text-primary-light underline hover:opacity-50"
-              onClick={() => handleNavigate("/privacypolicy")}
+              onClick={() => handleNavigate("/privacy-policy")}
             >
               {t("FOOTER.PRIVACYPOLICY")}
             </button>
