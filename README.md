@@ -8,8 +8,6 @@
   <img src="https://img.shields.io/github/stars/MateusPitura/web-react-portfolio?style=social"> 
 </p> 
 
-> :checkered_flag: Este projeto está finalizado :checkered_flag:  
-
 ## Descrição 
 
 Bem-vindo ao meu portfólio! Este projeto foi criado para exibir meus trabalhos, habilidades e experiências como desenvolvedor
