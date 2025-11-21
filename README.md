@@ -4,7 +4,6 @@
 
 <p> 
   <img src="https://img.shields.io/badge/Release-Aug%202024-green">  
-  <img src="https://img.shields.io/badge/Status-Closed-brightgreen">  
   <img src="https://img.shields.io/github/stars/MateusPitura/web-react-portfolio?style=social"> 
 </p> 
 
