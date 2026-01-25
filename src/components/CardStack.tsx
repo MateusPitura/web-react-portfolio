@@ -1,4 +1,3 @@
-import { Divider } from "@mui/material";
 import React, { ReactNode, RefObject, Suspense } from "react";
 import Slider from "react-slick";
 import { Badge } from "../types/Badge";
@@ -94,7 +93,7 @@ function CardStack({
               </button>
             </div>
             {index != stacksLastIndex && (
-              <Divider className="bg-surface-light dark:bg-outline-light" />
+              <div className="border-b border-neutral-200 dark:border-neutral-600" />
             )}
           </div>
         ))}

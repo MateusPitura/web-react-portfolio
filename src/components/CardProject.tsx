@@ -1,5 +1,5 @@
-import { Badge } from "../types/Badge";
 import React, { Suspense } from "react";
+import { Badge } from "../types/Badge";
 import BadgeLoading from "./BadgeLoading";
 import ImageLoading from "./ImageLoading";
 

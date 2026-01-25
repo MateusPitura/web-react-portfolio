@@ -1,28 +1,26 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { lazy, Suspense } from "react";
-import Loading from "./pages/Loading";
+import { lazy } from "react";
+import { Layout } from "./components/Layout";
 
 const Home = lazy(() => import("./pages/Home"));
 const Terms = lazy(() => import("./pages/Terms"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-const App: React.FC = () => {
+const App = () => {
+  const isProduction = import.meta.env.MODE === "production";
+
   return (
-    <BrowserRouter basename="/web-react-portfolio">
-      <Header />
-      <Suspense fallback={<Loading />}>
-        <Routes>
+    <BrowserRouter basename={isProduction ? "/web-react-portfolio" : "/"}>
+      <Routes>
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
-      <Footer />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 };
