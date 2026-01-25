@@ -1,1 +1,0 @@
-import{j as r}from"./index-DbHVue7x.js";function t({badge:e}){return r.jsx("div",{className:"flex justify-center items-center",children:r.jsx("img",{id:e.reference,className:"rounded-lg h-[1.75rem] w-full",src:e.imageUrl,alt:`Stack ${e.reference}`})})}export{t as default};
