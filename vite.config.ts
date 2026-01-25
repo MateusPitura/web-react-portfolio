@@ -10,6 +10,8 @@ export default ({ mode }: { mode: string }) => {
       // assetsDir: "static"
       rollupOptions: {
         output: {
+          entryFileNames: `${version}/[name]-[hash].js`,
+          chunkFileNames: `${version}/[name]-[hash].js`,
           assetFileNames: (assetInfo) => {
             // if (
             //   /\.(png|jpe?g|svg|gif|webp|ico)$/i.test(assetInfo.name ?? "")
