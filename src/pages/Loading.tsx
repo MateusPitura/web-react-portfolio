@@ -1,11 +1,11 @@
-import { CircularProgress } from "@mui/material";
-
 export default function Loading() {
   return (
-    <div className="flex justify-center items-center w-full h-screen bg-surface-light dark:bg-surface-dark z-50">
-      <main className="text-onSurface-light darK:text-onSurface-dark">
-        <CircularProgress color="inherit" />
-      </main>
+    <div className="flex flex-1 items-center justify-center bg-surface-light dark:bg-surface-dark">
+      <div
+        className="w-10 h-10 border-4 border-onSurface-light border-solid animate-spin rounded-full border-t-transparent z-50"
+        role="status"
+        aria-label="Loading"
+      />
     </div>
   );
 }
