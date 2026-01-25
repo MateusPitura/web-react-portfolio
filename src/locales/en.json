@@ -22,7 +22,7 @@
   "PROJECT.COMBUSTIVEL": "🚗 Meu Carro Flex is an application developed in React Native that helps users determine which fuel is most economical for their vehicles",
   "PROJECT.API": "☁️ This project consists of a REST API developed in Spring Boot to support the Vest Info application",
   "STACKS.TOOLTIP": "Click on the technologies to see where I have already used them",
-  "FOOTER.COPYRIGHT": "Copyright © 2024 Mateus Pitura. All rights reserved",
+  "FOOTER.COPYRIGHT": "Copyright © {{currentYear}} Mateus Pitura. All rights reserved",
   "FOOTER.TERMS": "Terms",
   "FOOTER.PRIVACYPOLICY": "Privacy Policy",
   "TERMS_OF_USE.TITLE": "Website Terms of Use",

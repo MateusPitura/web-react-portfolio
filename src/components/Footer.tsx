@@ -1,7 +1,7 @@
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useGlobalStore } from "../store/globalStore";
-import { useEffect, useState } from "react";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -27,7 +27,7 @@ export default function Footer() {
       <div className="flex-1 p-2 items-center justify-center">
         <div className="p-2 flex items-center justify-center">
           <span className="text-onSecondary-light text-center">
-            {t("FOOTER.COPYRIGHT")}
+            {t("FOOTER.COPYRIGHT", { currentYear: new Date().getFullYear() })}
           </span>
         </div>
         <div className="flex flex-wrap flex-1 items-center justify-center">
