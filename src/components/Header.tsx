@@ -1,4 +1,6 @@
-import { DarkMode, LightMode, Translate } from "@mui/icons-material";
+import DarkMode from "@mui/icons-material/DarkMode";
+import LightMode from "@mui/icons-material/LightMode";
+import Translate from "@mui/icons-material/Translate";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
