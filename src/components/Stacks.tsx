@@ -1,14 +1,8 @@
-import { RefObject } from "react";
-import Slider from "react-slick";
 import CardStack from "../components/CardStack";
 import { badgesSkills } from "../constants/badgesSkills";
 import { useGlobalStore } from "../store/globalStore";
 
-interface ProjectProperties {
-  sliderRef: RefObject<Slider>;
-}
-
-function Stacks({ sliderRef }: ProjectProperties) {
+function Stacks() {
   const { showTooltip, toggleShowTooltip } = useGlobalStore();
 
   return (
@@ -22,14 +16,12 @@ function Stacks({ sliderRef }: ProjectProperties) {
             badgesSkills.Storybook,
             badgesSkills.HTML,
           ]}
-          sliderRef={sliderRef}
           setIsTooltipOpen={toggleShowTooltip}
           isTooltipOpen={showTooltip}
         />
         <CardStack
           title="Design"
           badges={[badgesSkills.Figma, badgesSkills.Tailwind, badgesSkills.CSS]}
-          sliderRef={sliderRef}
           setIsTooltipOpen={toggleShowTooltip}
         />
         <CardStack
@@ -40,7 +32,6 @@ function Stacks({ sliderRef }: ProjectProperties) {
             badgesSkills.RESTfulAPI,
             badgesSkills.SpringBoot,
           ]}
-          sliderRef={sliderRef}
           setIsTooltipOpen={toggleShowTooltip}
         />
         <CardStack
@@ -51,25 +42,21 @@ function Stacks({ sliderRef }: ProjectProperties) {
             badgesSkills.DYNAMODB,
             badgesSkills.Oracle,
           ]}
-          sliderRef={sliderRef}
           setIsTooltipOpen={toggleShowTooltip}
         />
         <CardStack
           title="DevOps"
           badges={[badgesSkills.OCI, badgesSkills.AWS, badgesSkills.Terraform]}
-          sliderRef={sliderRef}
           setIsTooltipOpen={toggleShowTooltip}
         />
         <CardStack
           title="Mobile"
           badges={[badgesSkills.ReactNative]}
-          sliderRef={sliderRef}
           setIsTooltipOpen={toggleShowTooltip}
         />
         <CardStack
           title="Others"
           badges={[badgesSkills.Git, badgesSkills.Linux]}
-          sliderRef={sliderRef}
           setIsTooltipOpen={toggleShowTooltip}
         />
       </div>

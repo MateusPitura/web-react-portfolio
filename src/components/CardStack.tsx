@@ -1,5 +1,5 @@
-import React, { ReactNode, RefObject, Suspense } from "react";
-import Slider from "react-slick";
+import React, { ReactNode, Suspense } from "react";
+import { useGlobalStore } from "../store/globalStore";
 import { Badge } from "../types/Badge";
 import BadgeLoading from "./BadgeLoading";
 import Tooltip from "./Tooltip";
@@ -7,7 +7,6 @@ import Tooltip from "./Tooltip";
 interface CardStackProperties {
   title: string | ReactNode;
   badges?: Badge[];
-  sliderRef: RefObject<Slider>;
   isTooltipOpen?: boolean;
   setIsTooltipOpen: (state: boolean) => void;
 }
@@ -41,16 +40,15 @@ const scrollToElement = (id: string) => {
 function CardStack({
   title,
   badges,
-  sliderRef,
   isTooltipOpen,
   setIsTooltipOpen,
 }: CardStackProperties) {
   const stacksLastIndex = Number(badges?.length) - 1;
 
+  const { setCarouselIndex } = useGlobalStore();
+
   const goToSlide = (index: number) => {
-    if (sliderRef.current) {
-      sliderRef.current.slickGoTo(index);
-    }
+    setCarouselIndex(index);
   };
 
   return (

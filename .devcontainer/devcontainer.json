@@ -14,7 +14,8 @@
         "yoavbls.pretty-ts-errors",
         "sainoba.px-to-rem",
         "MateusPitura.star-console",
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "Gruntfuggly.todo-tree"
       ]
     }
   },

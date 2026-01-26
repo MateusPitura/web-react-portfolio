@@ -8,6 +8,7 @@ export const useGlobalStore = create(
         showTooltip: true,
         isDarkMode: false,
         language: "en",
+        carouselIndex: 0,
       },
       (set) => ({
         toggleShowTooltip: (newState: boolean) =>
@@ -18,7 +19,9 @@ export const useGlobalStore = create(
           })),
         toggleLanguage: () =>
           set((state) => ({ language: state.language === "pt" ? "en" : "pt" })),
-      })
+        setCarouselIndex: (newIndex: number) =>
+          set({ carouselIndex: newIndex }),
+      }),
     ),
     {
       name: "globalStore",
@@ -26,6 +29,6 @@ export const useGlobalStore = create(
         isDarkMode: state.isDarkMode,
         language: state.language,
       }),
-    }
-  )
+    },
+  ),
 );

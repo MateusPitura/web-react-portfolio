@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
                 <p className="text-[1rem] w-full">
                     {t('PRIVACY_POLICY.SECTION6.PARAGRAPH1')}
                 </p>
-                <h2 className="text-[2rem] w-full">
+                {/* <h2 className="text-[2rem] w-full">
                     {t('PRIVACY_POLICY.SECTION7.TITLE')}
                 </h2>
                 <p className="text-[1rem] w-full">
@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <p className="text-[1rem] w-full">
                     {t('PRIVACY_POLICY.SECTION7.PARAGRAPH2')}
-                </p>
+                </p> */}
                 <h2 className="text-[2rem] w-full">
                     {t('PRIVACY_POLICY.SECTION8.TITLE')}
                 </h2>
