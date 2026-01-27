@@ -29,6 +29,7 @@ export default function Carousel({ items }: CarouselProperties) {
         <button
           onClick={before}
           className="text-onPrimary-light hover:opacity-50 h-fit p-1 hidden sm:block"
+          name="Previous carousel item"
         >
           <NavigateBeforeIcon color="inherit" />
         </button>
@@ -48,6 +49,7 @@ export default function Carousel({ items }: CarouselProperties) {
         <button
           onClick={next}
           className="text-onPrimary-light hover:opacity-50 h-fit p-1 hidden sm:block"
+          name="Next carousel item"
         >
           <NavigateNextIcon color="inherit" />
         </button>
