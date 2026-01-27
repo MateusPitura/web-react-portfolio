@@ -1,0 +1,1 @@
+export const BASENAME = "/web-react-portfolio";

@@ -15,7 +15,8 @@
         "sainoba.px-to-rem",
         "MateusPitura.star-console",
         "bradlc.vscode-tailwindcss",
-        "Gruntfuggly.todo-tree"
+        "Gruntfuggly.todo-tree",
+        "jock.svg"
       ]
     }
   },

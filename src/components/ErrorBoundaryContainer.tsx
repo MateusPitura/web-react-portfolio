@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { BASENAME } from "../constants";
 
 export default function ErrorBoundaryContainer() {
   const { t } = useTranslation();
@@ -22,13 +22,14 @@ export default function ErrorBoundaryContainer() {
           </ol>
           <p className="text-[1rem] w-full">
             {t("PAGE_NOT_FOUND.PARAGRAPH2")}{" "}
-            <Link
-              className="text-primary-light underline hover:opacity-50"
-              to="/"
-              target="_self"
+            <span
+              className="text-primary-light underline hover:opacity-50 cursor-pointer"
+              onClick={() => {
+                window.location.href = BASENAME;
+              }}
             >
               {t("PAGE_NOT_FOUND.HERE")}
-            </Link>
+            </span>
           </p>
         </main>
       </div>

@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { lazy } from "react";
 import { Layout } from "./components/Layout";
+import { BASENAME } from "./constants";
 
 const Home = lazy(() => import("./pages/Home"));
 const Terms = lazy(() => import("./pages/Terms"));
@@ -12,7 +13,7 @@ const App = () => {
   const isProduction = import.meta.env.MODE === "production";
 
   return (
-    <BrowserRouter basename={isProduction ? "/web-react-portfolio" : "/"}>
+    <BrowserRouter basename={isProduction ? BASENAME : "/"}>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />

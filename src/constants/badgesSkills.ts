@@ -1,191 +1,178 @@
 // src: https://github.com/Ileriayo/markdown-badges
+import androidBadge from "../assets/badges/android.svg";
+import awsBadge from "../assets/badges/aws.svg";
+import cBadge from "../assets/badges/c.svg";
+import cssBadge from "../assets/badges/css.svg";
+import dockerBadge from "../assets/badges/docker.svg";
+import dynamoBadge from "../assets/badges/dynamo.svg";
+import figmaBadge from "../assets/badges/figma.svg";
+import gitBadge from "../assets/badges/git.svg";
+import graphqlBadge from "../assets/badges/graphql.svg";
+import htmlBadge from "../assets/badges/html.svg";
+import javaBadge from "../assets/badges/java.svg";
+import javacriptBadge from "../assets/badges/javascript.svg";
+import linuxBadge from "../assets/badges/linux.svg";
+import mysqlBadge from "../assets/badges/mysql.svg";
+import nodeJsBadge from "../assets/badges/node.svg";
+import ociBadge from "../assets/badges/oci.svg";
+import oracleBadge from "../assets/badges/oracle.svg";
+import pythonBadge from "../assets/badges/python.svg";
+import rdsBadge from "../assets/badges/rds.svg";
+import reactBadge from "../assets/badges/react.svg";
+import reactnativeBadge from "../assets/badges/reactnative.svg";
+import restfulBadge from "../assets/badges/restful.svg";
+import springbootBadge from "../assets/badges/springboot.svg";
+import storybookBadge from "../assets/badges/storybook.svg";
+import tailwindBadge from "../assets/badges/tailwind.svg";
+import terraformBadge from "../assets/badges/terraform.svg";
+import typescriptBadge from "../assets/badges/typescript.svg";
+import unityBadge from "../assets/badges/unity.svg";
 
 export const badgesSkills = {
   React: {
     id: "1",
-    imageUrl:
-      "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB", //React
+    imageUrl: reactBadge,
     reference: "REACT",
   },
   TypeScript: {
     id: "2",
-    imageUrl:
-      "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white", //Typescript
+    imageUrl: typescriptBadge,
     reference: "TYPESCRIPT",
   },
   JavaScript: {
     id: "3",
-    imageUrl:
-      "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E", //Javascript
+    imageUrl: javacriptBadge,
     reference: "JAVASCRIPT",
   },
   Tailwind: {
     id: "4",
-    imageUrl:
-      "https://img.shields.io/badge/tailwind-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white", //Tailwind
+    imageUrl: tailwindBadge,
     reference: "TAILWIND",
   },
   CSS: {
     id: "5",
-    imageUrl:
-      "https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white", //CSS
+    imageUrl: cssBadge,
     reference: "CSS",
   },
   HTML: {
     id: "6",
-    imageUrl:
-      "https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white", //HTML
+    imageUrl: htmlBadge,
     reference: "HTML",
   },
   SpringBoot: {
     id: "7",
-    imageUrl:
-      "https://img.shields.io/badge/spring boot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white", //Spring Boot
+    imageUrl: springbootBadge,
     reference: "SPRINGBOOT",
     sliderIndex: 2,
   },
   Java: {
     id: "8",
-    imageUrl:
-      "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white", //Java
+    imageUrl: javaBadge,
     reference: "JAVA",
     sliderIndex: 2,
   },
   RESTfulAPI: {
     id: "9",
-    imageUrl:
-      "https://img.shields.io/badge/RESTful API-2F3134?style=for-the-badge", //RESTFUL API
+    imageUrl: restfulBadge,
     reference: "RESTFULAPI",
-    sliderIndex: 2,
-  },
-  Postman: {
-    id: "10",
-    imageUrl:
-      "https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white", //POSTMAN
-    reference: "POSTMAN",
     sliderIndex: 2,
   },
   GraphQL: {
     id: "11",
-    imageUrl:
-      "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white", //GraphQL
+    imageUrl: graphqlBadge,
     reference: "GRAPHQL",
   },
   OCI: {
     id: "12",
-    imageUrl:
-      "https://img.shields.io/badge/OCI-F80000?style=for-the-badge&logo=oracle&logoColor=white", //OCI
+    imageUrl: ociBadge,
     reference: "OCI",
     sliderIndex: 2,
   },
   AWS: {
     id: "13",
-    imageUrl:
-      "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white", //AWS
+    imageUrl: awsBadge,
     reference: "AWS",
   },
   Git: {
     id: "14",
-    imageUrl:
-      "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white", //GIT
+    imageUrl: gitBadge,
     reference: "GIT",
   },
   Linux: {
     id: "15",
-    imageUrl:
-      "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black", //LINUX
+    imageUrl: linuxBadge,
     reference: "LINUX",
   },
   MySQL: {
     id: "16",
-    imageUrl:
-      "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white", //MySQL
+    imageUrl: mysqlBadge,
     reference: "MYSQL",
   },
   Oracle: {
     id: "17",
-    imageUrl:
-      "https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white", //Oracle
+    imageUrl: oracleBadge,
     reference: "ORACLE",
   },
   ReactNative: {
     id: "18",
-    imageUrl:
-      "https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB", //React Native
+    imageUrl: reactnativeBadge,
     reference: "REACTNATIVE",
     sliderIndex: 0,
   },
   Android: {
     id: "19",
-    imageUrl:
-      "https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white", // Android
+    imageUrl: androidBadge,
     reference: "ANDROID",
     sliderIndex: 0,
   },
   Figma: {
     id: "20",
-    imageUrl:
-      "https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white", //Figma
+    imageUrl: figmaBadge,
     reference: "FIGMA",
   },
   C: {
     id: "21",
-    imageUrl:
-      "https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white", //C
+    imageUrl: cBadge,
     reference: "C",
   },
   Python: {
     id: "22",
-    imageUrl:
-      "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54", //Python
+    imageUrl: pythonBadge,
     reference: "PYTHON",
   },
   Unity: {
     id: "23",
-    imageUrl:
-      "https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white", //Unity
+    imageUrl: unityBadge,
     reference: "UNITY",
   },
   Storybook: {
     id: "24",
-    imageUrl:
-      "https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white", //Storybook,
+    imageUrl: storybookBadge,
     reference: "STORYBOOK",
-  },
-  JWT: {
-    id: "25",
-    imageUrl:
-      "https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens", //JWT
-    reference: "JWT",
   },
   Terraform: {
     id: "26",
-    imageUrl:
-      "https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white", // Terraform
+    imageUrl: terraformBadge,
     reference: "TERRAFORM",
   },
   Docker: {
     id: "27",
-    imageUrl:
-      "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white", // Docker
+    imageUrl: dockerBadge,
     reference: "DOCKER",
   },
   Node: {
     id: "28",
-    imageUrl:
-      "https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white", // Node
+    imageUrl: nodeJsBadge,
     reference: "NODE",
   },
   RDS: {
     id: "29",
-    imageUrl:
-      "https://img.shields.io/badge/RDS-232F3E?style=for-the-badge&logo=amazon-rds&logoColor=white", // RDS
+    imageUrl: rdsBadge,
     reference: "RDS",
   },
   DYNAMODB: {
     id: "30",
-    imageUrl:
-      "https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazon-dynamodb&logoColor=white", // DYNAMODB
+    imageUrl: dynamoBadge,
     reference: "DYNAMODB",
   },
 };

@@ -24,7 +24,7 @@ export default function Carousel({ items }: CarouselProperties) {
   };
 
   return (
-    <div>
+    <>
       <div className="flex justify-between items-center">
         <button
           onClick={before}
@@ -33,7 +33,7 @@ export default function Carousel({ items }: CarouselProperties) {
           <NavigateBeforeIcon color="inherit" />
         </button>
 
-        <div className="relative w-full overflow-hidden m-4">
+        <div className="relative w-full overflow-hidden sm:m-4">
           <div
             className="flex transition-transform duration-500 ease-out"
             style={{ transform: `translateX(-${carouselIndex * 100}%)` }}
@@ -72,6 +72,6 @@ export default function Carousel({ items }: CarouselProperties) {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
