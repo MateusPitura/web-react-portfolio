@@ -30,11 +30,11 @@ function CardProject({
               {imageLarge && (
                 <Image
                   imgSmall={imageSmall}
-                  imgLarge={imageLarge}
-                  alt="Photo Perfil"
+                  src={imageLarge}
+                  alt={`Photo ${title} Project`}
                   width={860}
-                  height={430}
-                  lazy
+                  aspectRatio="2/1"
+                  loading="lazy"
                 />
               )}
             </div>

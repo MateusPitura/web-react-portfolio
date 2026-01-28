@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import PhotoPerfilLarge from "../assets/images/photo-perfil-large.webp";
+import PhotoPerfilSmall from "../assets/images/photo-perfil-small.webp";
 import Image from "./Image";
 
 function Introduction() {
@@ -10,10 +11,12 @@ function Introduction() {
       <div className="flex-1 p-2 max-w-[31.25rem] sm:min-w-[25rem] min-w-[18.75rem]">
         <div className="border-primary-light border-2 max-w-[6.25rem] relative right-5 top-5 z-10"></div>
         <Image
-          imgLarge={PhotoPerfilLarge}
+          src={PhotoPerfilLarge}
+          imgSmall={PhotoPerfilSmall}
           alt="Photo Perfil"
           width={450}
-          height={600}
+          aspectRatio="3/4"
+          loading="eager"
         />
       </div>
       <div className="flex-1 p-2 justify-start text-left max-w-[31.25rem] min-w-[18.75rem]">
