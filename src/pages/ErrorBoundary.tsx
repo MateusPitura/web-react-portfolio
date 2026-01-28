@@ -1,5 +1,9 @@
-import React, { ErrorInfo, ReactNode } from "react";
-import ErrorBoundaryContainer from "../components/ErrorBoundaryContainer";
+import React, { ErrorInfo, lazy, ReactNode, Suspense } from "react";
+import Loading from "./Loading";
+
+const ErrorBoundaryContainer = lazy(
+  () => import("../components/ErrorBoundaryContainer"),
+);
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -29,7 +33,17 @@ class ErrorBoundary extends React.Component<
 
   render() {
     if (this.state.hasError) {
-      return <ErrorBoundaryContainer />;
+      return (
+        <Suspense
+          fallback={
+            <div className="h-screen flex flex-col">
+              <Loading />
+            </div>
+          }
+        >
+          <ErrorBoundaryContainer />
+        </Suspense>
+      );
     }
     return this.props.children;
   }

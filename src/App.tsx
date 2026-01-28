@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { lazy } from "react";
 import { Layout } from "./components/Layout";
 import { BASENAME } from "./constants";
+import Home from "./pages/Home";
 
-const Home = lazy(() => import("./pages/Home"));
 const Terms = lazy(() => import("./pages/Terms"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const NotFound = lazy(() => import("./pages/NotFound"));
