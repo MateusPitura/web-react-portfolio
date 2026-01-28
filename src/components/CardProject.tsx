@@ -1,10 +1,6 @@
-import React, { Suspense } from "react";
 import { Badge } from "../types/Badge";
-import BadgeLoading from "./BadgeLoading";
-import ImageLoading from "./ImageLoading";
-
-const ImageLazy = React.lazy(() => import("./Image"));
-const BadgeLazy = React.lazy(() => import("./Badges"));
+import Badges from "./Badges";
+import Image from "./Image";
 
 interface CardProjectProperties {
   title: string;
@@ -32,20 +28,14 @@ function CardProject({
           <div>
             <div className="w-full">
               {imageLarge && (
-                <Suspense
-                  fallback={
-                    <ImageLoading className="aspect-[860/430] max-w-[860px]" />
-                  }
-                >
-                  <ImageLazy
-                    imgSmall={imageSmall}
-                    imgLarge={imageLarge}
-                    alt="Photo Perfil"
-                    width={860}
-                    height={430}
-                    lazy
-                  />
-                </Suspense>
+                <Image
+                  imgSmall={imageSmall}
+                  imgLarge={imageLarge}
+                  alt="Photo Perfil"
+                  width={860}
+                  height={430}
+                  lazy
+                />
               )}
             </div>
             <div className="block sm:flex p-2 mt-2">
@@ -66,11 +56,9 @@ function CardProject({
               </span>
             </div>
             <div className="w-full pt-5 flex flex-wrap gap-1">
-              <Suspense fallback={<BadgeLoading />}>
-                {badges?.map((badge) => (
-                  <BadgeLazy badge={badge} key={badge.id} />
-                ))}
-              </Suspense>
+              {badges?.map((badge) => (
+                <Badges badge={badge} key={badge.id} />
+              ))}
             </div>
           </div>
         </a>

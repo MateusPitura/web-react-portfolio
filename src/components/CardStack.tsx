@@ -1,7 +1,7 @@
-import React, { ReactNode, Suspense } from "react";
+import { ReactNode } from "react";
 import { useGlobalStore } from "../store/globalStore";
 import { Badge } from "../types/Badge";
-import BadgeLoading from "./BadgeLoading";
+import Badges from "./Badges";
 import Tooltip from "./Tooltip";
 
 interface CardStackProperties {
@@ -10,8 +10,6 @@ interface CardStackProperties {
   isTooltipOpen?: boolean;
   setIsTooltipOpen: (state: boolean) => void;
 }
-
-const BadgeLazy = React.lazy(() => import("./Badges"));
 
 const scrollToElement = (id: string) => {
   const element = document.getElementById(id);
@@ -77,15 +75,11 @@ function CardStack({
                   {index == stacksLastIndex && isTooltipOpen ? (
                     <Tooltip open={isTooltipOpen}>
                       <div>
-                        <Suspense fallback={<BadgeLoading key={item.id} />}>
-                          <BadgeLazy badge={item} />
-                        </Suspense>
+                        <Badges badge={item} />
                       </div>
                     </Tooltip>
                   ) : (
-                    <Suspense fallback={<BadgeLoading key={item.id} />}>
-                      <BadgeLazy badge={item} />
-                    </Suspense>
+                    <Badges badge={item} />
                   )}
                 </div>
               </button>
