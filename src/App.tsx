@@ -2,15 +2,16 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { lazy } from "react";
 import { Layout } from "./components/Layout";
-import { BASENAME } from "./constants";
+import { BASENAME, isProduction } from "./constants";
 import Home from "./pages/Home";
+import { auditInterceptor } from "./utils/auditInterceptor";
 
 const Terms = lazy(() => import("./pages/Terms"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const App = () => {
-  const isProduction = import.meta.env.MODE === "production";
+  auditInterceptor()
 
   return (
     <BrowserRouter basename={isProduction ? BASENAME : "/"}>
