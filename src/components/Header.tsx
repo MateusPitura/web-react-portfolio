@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.webp";
 import "../i18n";
 import { useGlobalStore } from "../store/globalStore";
+import Image from "./Image";
 
 export default function Header() {
   const { i18n } = useTranslation();
@@ -32,12 +33,13 @@ export default function Header() {
   return (
     <header className="flex p-2 sm:px-10 items-center min-h-[5rem] gap-1 bg-surface-light dark:bg-surface-dark sticky border-b border-neutral-200 dark:border-neutral-600 top-0 z-20">
       <Link to="/" className="hover:opacity-50">
-        <img
-          src={Logo}
+        <Image
           alt="Page logo"
           width={150}
-          height={45}
-          loading="lazy"
+          aspectRatio="4/1"
+          loading="eager"
+          src={Logo}
+          className="!shadow-none"
         />
       </Link>
       <div className="flex-1 flex justify-end items-center text-center gap-5">
