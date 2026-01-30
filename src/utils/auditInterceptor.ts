@@ -23,9 +23,10 @@ export async function auditInterceptor(): Promise<void> {
   const app = initializeApp({ projectId: "telemetry-c5275" });
   const db = getFirestore(app);
 
-  const clientId = localStorage.getItem("CLIENT_ID_PORTOFLIO");
+  let clientId = localStorage.getItem("CLIENT_ID_PORTOFLIO");
   if (!clientId) {
-    localStorage.setItem("CLIENT_ID_PORTOFLIO", nanoid());
+    clientId = nanoid()
+    localStorage.setItem("CLIENT_ID_PORTOFLIO", clientId);
   }
 
   const connection = (navigator as Navigator)?.connection;
