@@ -34,7 +34,7 @@ function EducationCard({
               {course}
             </span>
           </div>
-          <div className="flex flex-wrap space-y-2 text-start">
+          <div className="flex flex-col gap-2 text-center">
             {activities?.map((item, index) => (
               <span key={index} className="text-[1rem] text-onSecondary-light">
                 {item}
@@ -61,14 +61,14 @@ function EducationCard({
               {course}
             </span>
           </div>
-          <div className="flex flex-wrap space-y-2 text-start">
+          <div className="flex flex-col gap-2 text-start">
             {activities?.map((item, index) => (
-              <span
+              <div
                 key={index}
                 className="text-[0.875rem] text-onSecondary-light"
               >
                 {item}
-              </span>
+              </div>
             ))}
           </div>
         </div>

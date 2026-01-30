@@ -19,7 +19,7 @@ function Badges({ badge }: BadgesProperties) {
         src={badge.imageUrl}
         alt={`Stack ${badge.reference}`}
         className={classNames(
-          "rounded-md shadow-md w-full h-full object-cover transition-opacity duration-500",
+          "rounded-md w-full h-full object-cover transition-opacity duration-500",
           {
             "opacity-0": !loaded,
             "opacity-100": loaded,

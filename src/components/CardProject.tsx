@@ -35,6 +35,7 @@ function CardProject({
                   width={860}
                   aspectRatio="2/1"
                   loading="lazy"
+                  className="!shadow-none"
                 />
               )}
             </div>

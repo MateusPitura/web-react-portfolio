@@ -33,15 +33,20 @@ function Introduction() {
             </strong>
           </div>
         </div>
-        <div>
-          <div className="mb-2">
+        <div className="flex flex-col gap-2">
+          <div>
             <span className="text-onSurface-light dark:text-surface-light text-[1rem]">
               {t("INTRODUCTION.P1")}
             </span>
           </div>
-          <div className="mt-2">
+          <div>
             <span className="text-onSurface-light dark:text-surface-light text-[1rem]">
               {t("INTRODUCTION.P2")}
+            </span>
+          </div>
+          <div>
+            <span className="text-onSurface-light dark:text-surface-light text-[1rem]">
+              {t("INTRODUCTION.P3")}
             </span>
           </div>
         </div>

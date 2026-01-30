@@ -14,6 +14,7 @@ function Education() {
           t("UEPG.ACTIVITY1"),
           t("UEPG.ACTIVITY2"),
           t("UEPG.ACTIVITY3"),
+          t("UEPG.ACTIVITY4"),
         ]}
         isLarge
       />
@@ -35,7 +36,7 @@ function Education() {
             fromTo="2023"
             course={
               <a
-                href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=624E43496DE7A92D339650BEB80BCEFBC9D6B87F214C9C1BA51039E5254F97D5"
+                href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=242824DE92C9BF48FB7AD5C8088F0C0544F24D67547EDECCA14C06892060CAB4"
                 target="_blank"
                 className="hover:opacity-50 hover:text-onSecondary-light underline text-onSecondary-light"
               >
