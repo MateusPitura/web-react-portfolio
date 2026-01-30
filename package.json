@@ -9,7 +9,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "serve": "npm run build -- --mode staging && serve dist"
+    "serve": "npm run build -- --mode staging && serve dist",
+    "generate-badges": "npx svgo -f src/assets/badges -o src/assets/badgesMinified"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -43,6 +44,7 @@
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.39",
     "serve": "^14.2.5",
+    "svgo": "^4.0.0",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
