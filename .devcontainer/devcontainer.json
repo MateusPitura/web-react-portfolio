@@ -15,7 +15,9 @@
         "sainoba.px-to-rem",
         "MateusPitura.star-console",
         "bradlc.vscode-tailwindcss",
-        "Gruntfuggly.todo-tree"
+        "Gruntfuggly.todo-tree",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian"
       ]
     }
   },
