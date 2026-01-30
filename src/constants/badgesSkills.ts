@@ -1,32 +1,37 @@
 // src: https://github.com/Ileriayo/markdown-badges
-import androidBadge from "../assets/badges/android.svg";
-import awsBadge from "../assets/badges/aws.svg";
-import cBadge from "../assets/badges/c.svg";
-import cssBadge from "../assets/badges/css.svg";
-import dockerBadge from "../assets/badges/docker.svg";
-import dynamoBadge from "../assets/badges/dynamo.svg";
-import figmaBadge from "../assets/badges/figma.svg";
-import gitBadge from "../assets/badges/git.svg";
-import graphqlBadge from "../assets/badges/graphql.svg";
-import htmlBadge from "../assets/badges/html.svg";
-import javaBadge from "../assets/badges/java.svg";
-import javacriptBadge from "../assets/badges/javascript.svg";
-import linuxBadge from "../assets/badges/linux.svg";
-import mysqlBadge from "../assets/badges/mysql.svg";
-import nodeJsBadge from "../assets/badges/node.svg";
-import ociBadge from "../assets/badges/oci.svg";
-import oracleBadge from "../assets/badges/oracle.svg";
-import pythonBadge from "../assets/badges/python.svg";
-import rdsBadge from "../assets/badges/rds.svg";
-import reactBadge from "../assets/badges/react.svg";
-import reactnativeBadge from "../assets/badges/reactnative.svg";
-import restfulBadge from "../assets/badges/restful.svg";
-import springbootBadge from "../assets/badges/springboot.svg";
-import storybookBadge from "../assets/badges/storybook.svg";
-import tailwindBadge from "../assets/badges/tailwind.svg";
-import terraformBadge from "../assets/badges/terraform.svg";
-import typescriptBadge from "../assets/badges/typescript.svg";
-import unityBadge from "../assets/badges/unity.svg";
+import androidBadge from "../assets/badgesMinified/android.svg";
+import awsBadge from "../assets/badgesMinified/aws.svg";
+import cBadge from "../assets/badgesMinified/c.svg";
+import cssBadge from "../assets/badgesMinified/css.svg";
+import dockerBadge from "../assets/badgesMinified/docker.svg";
+import dynamoBadge from "../assets/badgesMinified/dynamo.svg";
+import figmaBadge from "../assets/badgesMinified/figma.svg";
+import gitBadge from "../assets/badgesMinified/git.svg";
+import graphqlBadge from "../assets/badgesMinified/graphql.svg";
+import htmlBadge from "../assets/badgesMinified/html.svg";
+import javaBadge from "../assets/badgesMinified/java.svg";
+import javacriptBadge from "../assets/badgesMinified/javascript.svg";
+import jestBadge from "../assets/badgesMinified/jest.svg";
+import linuxBadge from "../assets/badgesMinified/linux.svg";
+import mysqlBadge from "../assets/badgesMinified/mysql.svg";
+import nodeJsBadge from "../assets/badgesMinified/node.svg";
+import ociBadge from "../assets/badgesMinified/oci.svg";
+import oracleBadge from "../assets/badgesMinified/oracle.svg";
+import pythonBadge from "../assets/badgesMinified/python.svg";
+import rdsBadge from "../assets/badgesMinified/rds.svg";
+import reactBadge from "../assets/badgesMinified/react.svg";
+import reactnativeBadge from "../assets/badgesMinified/reactnative.svg";
+import restfulBadge from "../assets/badgesMinified/restful.svg";
+import springbootBadge from "../assets/badgesMinified/springboot.svg";
+import storybookBadge from "../assets/badgesMinified/storybook.svg";
+import tailwindBadge from "../assets/badgesMinified/tailwind.svg";
+import terraformBadge from "../assets/badgesMinified/terraform.svg";
+import typescriptBadge from "../assets/badgesMinified/typescript.svg";
+import unityBadge from "../assets/badgesMinified/unity.svg";
+import nestjsBadge from "../assets/badgesMinified/nestjs.svg";
+import amazons3Badge from "../assets/badgesMinified/amazonS3.svg";
+import cypressBadge from "../assets/badgesMinified/cypress.svg";
+import postgresBadge from "../assets/badgesMinified/postgres.svg";
 
 export const badgesSkills = {
   React: {
@@ -170,9 +175,34 @@ export const badgesSkills = {
     imageUrl: rdsBadge,
     reference: "RDS",
   },
-  DYNAMODB: {
+  DynamoDB: {
     id: "30",
     imageUrl: dynamoBadge,
     reference: "DYNAMODB",
+  },
+  Jest: {
+    id: "31",
+    imageUrl: jestBadge,
+    reference: "JEST",
+  },
+  NestJS: {
+    id: "32",
+    imageUrl: nestjsBadge,
+    reference: "NESTJS",
+  },
+  AmazonS3: {
+    id: "33",
+    imageUrl: amazons3Badge,
+    reference: "AMAZONS3",
+  },
+  Cypress: {
+    id: "34",
+    imageUrl: cypressBadge,
+    reference: "CYPRESS",
+  },
+  Postgres: {
+    id: "35",
+    imageUrl: postgresBadge,
+    reference: "Postgres",
   },
 };

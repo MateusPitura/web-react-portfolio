@@ -24,9 +24,9 @@ function Project() {
               description={t("PROJECT.VESTIBULAR")}
               badges={[
                 badgesSkills.ReactNative,
+                badgesSkills.Android,
                 badgesSkills.CSS,
                 badgesSkills.Git,
-                badgesSkills.Figma,
               ]}
             />,
             <CardProject
@@ -38,9 +38,9 @@ function Project() {
               imageSmall={AppReactNativeCombustivelSmall}
               badges={[
                 badgesSkills.ReactNative,
+                badgesSkills.Android,
                 badgesSkills.CSS,
                 badgesSkills.Git,
-                badgesSkills.Figma,
               ]}
             />,
             <CardProject

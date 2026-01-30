@@ -15,14 +15,11 @@ function Stacks() {
             badgesSkills.TypeScript,
             badgesSkills.Storybook,
             badgesSkills.HTML,
+            badgesSkills.Tailwind,
+            badgesSkills.CSS,
           ]}
           setIsTooltipOpen={toggleShowTooltip}
           isTooltipOpen={showTooltip}
-        />
-        <CardStack
-          title="Design"
-          badges={[badgesSkills.Figma, badgesSkills.Tailwind, badgesSkills.CSS]}
-          setIsTooltipOpen={toggleShowTooltip}
         />
         <CardStack
           title="Back-End"
@@ -31,6 +28,7 @@ function Stacks() {
             badgesSkills.Node,
             badgesSkills.RESTfulAPI,
             badgesSkills.SpringBoot,
+            badgesSkills.NestJS,
           ]}
           setIsTooltipOpen={toggleShowTooltip}
         />
@@ -39,8 +37,9 @@ function Stacks() {
           badges={[
             badgesSkills.MySQL,
             badgesSkills.RDS,
-            badgesSkills.DYNAMODB,
-            badgesSkills.Oracle,
+            badgesSkills.DynamoDB,
+            badgesSkills.Postgres,
+            badgesSkills.AmazonS3,
           ]}
           setIsTooltipOpen={toggleShowTooltip}
         />
@@ -51,12 +50,17 @@ function Stacks() {
         />
         <CardStack
           title="Mobile"
-          badges={[badgesSkills.ReactNative]}
+          badges={[badgesSkills.ReactNative, badgesSkills.Android]}
+          setIsTooltipOpen={toggleShowTooltip}
+        />
+        <CardStack
+          title="Test"
+          badges={[badgesSkills.Jest, badgesSkills.Cypress]}
           setIsTooltipOpen={toggleShowTooltip}
         />
         <CardStack
           title="Others"
-          badges={[badgesSkills.Git, badgesSkills.Linux]}
+          badges={[badgesSkills.Git, badgesSkills.Linux, badgesSkills.Docker]}
           setIsTooltipOpen={toggleShowTooltip}
         />
       </div>

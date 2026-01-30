@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import JobCard from "../components/JobCard";
 import { badgesSkills } from "../constants/badgesSkills";
-import Year from "./Year";
 import VerticalLine from "./VerticalLine";
+import Year from "./Year";
 
 function Experience() {
   const { t } = useTranslation();
@@ -19,7 +19,7 @@ function Experience() {
           t("HURCG.ACTIVITY2"),
           t("HURCG.ACTIVITY3"),
         ]}
-        badges={[badgesSkills.Oracle]}
+        badges={[badgesSkills.MySQL]}
       />
       <Year year="2023" />
       <VerticalLine />
@@ -31,7 +31,7 @@ function Experience() {
           t("CONTINENTAL.ACTIVITY2"),
           t("CONTINENTAL.ACTIVITY3"),
         ]}
-        badges={[badgesSkills.HTML, badgesSkills.CSS, badgesSkills.Figma]}
+        badges={[badgesSkills.HTML, badgesSkills.CSS]}
       />
       <Year year="2024" />
       <VerticalLine gradient />
@@ -57,8 +57,10 @@ function Experience() {
           badgesSkills.Storybook,
           badgesSkills.Terraform,
           badgesSkills.Node,
-          badgesSkills.DYNAMODB,
+          badgesSkills.DynamoDB,
           badgesSkills.RDS,
+          badgesSkills.AmazonS3,
+          badgesSkills.Jest,
         ]}
       />
     </section>
