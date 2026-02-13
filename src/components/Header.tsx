@@ -4,7 +4,7 @@ import Translate from "@mui/icons-material/Translate";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/logo.webp";
+import Logo from "../assets/images/logo.svg";
 import "../i18n";
 import { useGlobalStore } from "../store/globalStore";
 import Image from "./Image";
@@ -36,10 +36,10 @@ export default function Header() {
         <Image
           alt="Page logo"
           width={150}
-          aspectRatio="4/1"
+          aspectRatio="20/3"
           loading="eager"
           src={Logo}
-          className="!shadow-none"
+          className="!shadow-none w-[150px]"
         />
       </Link>
       <div className="flex-1 flex justify-end items-center text-center gap-5">

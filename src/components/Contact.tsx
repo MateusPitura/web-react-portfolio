@@ -1,4 +1,4 @@
-import SocialGithubLogo from "../assets/images/social-github-small.webp";
+import SocialGithubLogo from "../assets/images/social-github-small.svg";
 import SocialLinkedinLogo from "../assets/images/social-linkedin-small.webp";
 import Image from "./Image";
 
@@ -17,8 +17,8 @@ export default function Contact() {
               src={SocialGithubLogo}
               alt="GitHub logo"
               width={234}
-              aspectRatio="3/1"
-              className="!shadow-none"
+              aspectRatio="416/95"
+              className="!shadow-none !rounded-none"
             />
           </a>
         </div>
@@ -33,8 +33,8 @@ export default function Contact() {
               src={SocialLinkedinLogo}
               alt="Linkedin logo"
               width={234}
-              aspectRatio="3/1"
-              className="!shadow-none"
+              aspectRatio="78/19"
+              className="!shadow-none !rounded-none"
             />
           </a>
         </div>
