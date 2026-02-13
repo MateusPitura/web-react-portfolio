@@ -39,7 +39,7 @@ export default function Header() {
           aspectRatio="20/3"
           loading="eager"
           src={Logo}
-          className="!shadow-none w-[150px]"
+          className="!shadow-none !w-[150px]"
         />
       </Link>
       <div className="flex-1 flex justify-end items-center text-center gap-5">
