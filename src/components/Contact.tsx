@@ -1,5 +1,5 @@
 import SocialGithubLogo from "../assets/images/social-github-small.svg";
-import SocialLinkedinLogo from "../assets/images/social-linkedin-small.webp";
+import SocialLinkedinLogo from "../assets/images/social-linkedin-small.svg";
 import Image from "./Image";
 
 export default function Contact() {
