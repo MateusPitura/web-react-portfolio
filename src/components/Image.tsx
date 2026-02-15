@@ -2,7 +2,6 @@ import classNames from "classnames";
 import { useState } from "react";
 
 interface ImageProperties {
-  imgSmall?: string;
   src?: string;
   alt: string;
   width: number;
@@ -12,7 +11,6 @@ interface ImageProperties {
 }
 
 export default function Image({
-  imgSmall,
   src,
   alt,
   width,
@@ -32,42 +30,21 @@ export default function Image({
           )}
         />
       )}
-      {imgSmall ? (
-        <picture>
-          <source srcSet={src} media="(min-width: 425px)" />
-          <img
-            src={imgSmall}
-            alt={alt}
-            width={width}
-            loading={loading}
-            onLoad={() => setLoaded(true)}
-            className={classNames(
-              "rounded-md shadow-md w-full h-full object-cover transition-opacity duration-500",
-              className,
-              {
-                "opacity-0": !loaded,
-                "opacity-100": loaded,
-              },
-            )}
-          />
-        </picture>
-      ) : (
-        <img
-          src={src}
-          alt={alt}
-          className={classNames(
-            "rounded-md shadow-md w-full h-full object-cover transition-opacity duration-500",
-            className,
-            {
-              "opacity-0": !loaded,
-              "opacity-100": loaded,
-            },
-          )}
-          width={width}
-          loading={loading}
-          onLoad={() => setLoaded(true)}
-        />
-      )}
+      <img
+        src={src}
+        alt={alt}
+        className={classNames(
+          "rounded-md shadow-md w-full h-full object-cover transition-opacity duration-500",
+          className,
+          {
+            "opacity-0": !loaded,
+            "opacity-100": loaded,
+          },
+        )}
+        width={width}
+        loading={loading}
+        onLoad={() => setLoaded(true)}
+      />
     </div>
   );
 }

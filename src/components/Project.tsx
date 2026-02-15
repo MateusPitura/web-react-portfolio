@@ -1,8 +1,6 @@
 import { useTranslation } from "react-i18next";
-import AppReactNativeCombustivelLarge from "../assets/images/app-combustivel-large.webp";
-import AppReactNativeCombustivelSmall from "../assets/images/app-combustivel-small.webp";
-import AppReactnativeVestibularLarge from "../assets/images/app-vestibular-large.webp";
-import AppReactnativeVestibularSmall from "../assets/images/app-vestibular-small.webp";
+import AppReactNativeCombustivel860w from "../assets/images/app-combustivel-860w.webp";
+import AppReactnativeVestibular860w from "../assets/images/app-vestibular-860w.webp";
 import { badgesSkills } from "../constants/badgesSkills";
 import CardProject from "./CardProject";
 import Carousel from "./Carousel";
@@ -17,8 +15,7 @@ function Project() {
           items={[
             <CardProject
               title="app-reactnative-vestibular"
-              imageLarge={AppReactnativeVestibularLarge}
-              imageSmall={AppReactnativeVestibularSmall}
+              src={AppReactnativeVestibular860w}
               releaseYear={2024}
               link="https://github.com/MateusPitura/app-reactnative-vestibular"
               description={t("PROJECT.VESTIBULAR")}
@@ -34,8 +31,7 @@ function Project() {
               releaseYear={2023}
               description={t("PROJECT.COMBUSTIVEL")}
               link="https://github.com/MateusPitura/app-reactnative-combustivel"
-              imageLarge={AppReactNativeCombustivelLarge}
-              imageSmall={AppReactNativeCombustivelSmall}
+              src={AppReactNativeCombustivel860w}
               badges={[
                 badgesSkills.ReactNative,
                 badgesSkills.Android,

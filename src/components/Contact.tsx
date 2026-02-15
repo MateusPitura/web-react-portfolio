@@ -1,5 +1,5 @@
-import SocialGithubLogo from "../assets/images/social-github-small.svg";
-import SocialLinkedinLogo from "../assets/images/social-linkedin-small.svg";
+import SocialGithub from "../assets/images/social-github.svg";
+import SocialLinkedin from "../assets/images/social-linkedin.svg";
 import Image from "./Image";
 
 export default function Contact() {
@@ -14,7 +14,7 @@ export default function Contact() {
             aria-label="Link to Github"
           >
             <Image
-              src={SocialGithubLogo}
+              src={SocialGithub}
               alt="GitHub logo"
               width={234}
               aspectRatio="416/95"
@@ -30,7 +30,7 @@ export default function Contact() {
             aria-label="Link to Linkedin"
           >
             <Image
-              src={SocialLinkedinLogo}
+              src={SocialLinkedin}
               alt="Linkedin logo"
               width={234}
               aspectRatio="78/19"

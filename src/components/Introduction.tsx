@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
-import PhotoPerfilLarge from "../assets/images/photo-perfil-large.webp";
-import PhotoPerfilSmall from "../assets/images/photo-perfil-small.webp";
+import PhotoPerfil450w from "../assets/images/photo-perfil-450w.webp";
 import Image from "./Image";
 
 function Introduction() {
@@ -11,8 +10,7 @@ function Introduction() {
       <div className="flex-1 p-2 max-w-[31.25rem] sm:min-w-[25rem] min-w-[18.75rem]">
         <div className="border-primary-light border-2 max-w-[6.25rem] relative right-5 top-5 z-10"></div>
         <Image
-          src={PhotoPerfilLarge}
-          imgSmall={PhotoPerfilSmall}
+          src={PhotoPerfil450w}
           alt="Photo Perfil"
           width={450}
           aspectRatio="3/4"

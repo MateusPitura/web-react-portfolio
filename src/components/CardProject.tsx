@@ -7,15 +7,13 @@ interface CardProjectProperties {
   releaseYear: number;
   description: string;
   link: string;
-  imageLarge?: string;
-  imageSmall?: string;
+  src?: string;
   badges: Badge[];
 }
 
 function CardProject({
   description,
-  imageLarge,
-  imageSmall,
+  src,
   link,
   releaseYear,
   title,
@@ -27,10 +25,9 @@ function CardProject({
         <a className="hover:opacity-50 p-3 sm:p-5" href={link} target="_blank">
           <div>
             <div className="w-full">
-              {imageLarge && (
+              {src && (
                 <Image
-                  imgSmall={imageSmall}
-                  src={imageLarge}
+                  src={src}
                   alt={`Photo ${title} Project`}
                   width={860}
                   aspectRatio="2/1"
