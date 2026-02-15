@@ -58,6 +58,7 @@ export async function auditInterceptor(): Promise<void> {
     cookieEnabled: navigator?.cookieEnabled,
     fingerprint: fingerprint.visitorId,
     clientId,
+    dpr: window.devicePixelRatio,
   };
 
   try {
