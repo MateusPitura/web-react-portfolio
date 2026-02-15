@@ -42,8 +42,10 @@ export async function auditInterceptor(): Promise<void> {
     stage: import.meta.env.MODE ?? null,
     timezone: Intl?.DateTimeFormat()?.resolvedOptions()?.timeZone,
     viewport: {
-      width: window?.innerWidth ?? null,
-      height: window?.innerHeight ?? null,
+      innerWidth: window?.innerWidth ?? null,
+      innerHeight: window?.innerHeight ?? null,
+      outerWidth: window?.outerWidth ?? null,
+      outerHeight: window?.outerHeight ?? null,
     },
     connection: {
       effectiveType: connection?.effectiveType ?? null,
@@ -58,7 +60,7 @@ export async function auditInterceptor(): Promise<void> {
     cookieEnabled: navigator?.cookieEnabled,
     fingerprint: fingerprint.visitorId,
     clientId,
-    dpr: window.devicePixelRatio,
+    dpr: window.devicePixelRatio ?? null,
   };
 
   try {
