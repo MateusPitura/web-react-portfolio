@@ -11,7 +11,7 @@ import Image from "./Image";
 
 export default function Header() {
   const { i18n } = useTranslation();
-  const { isDarkMode, toggleIsDarkMode, language, toggleLanguage } =
+  const { isDarkMode, toggleIsDarkMode, toggleLanguage } =
     useGlobalStore();
 
   useEffect(() => {
@@ -22,13 +22,10 @@ export default function Header() {
     document.body.classList.remove("dark");
   }, [isDarkMode]);
 
-  useEffect(() => {
-    if (language === "pt") {
-      i18n.changeLanguage("en");
-      return;
-    }
-    i18n.changeLanguage("pt");
-  }, [language]);
+  function handleToggleLanguage() {
+    i18n.changeLanguage(i18n.language === "pt" ? "en" : "pt");
+    toggleLanguage()
+  }
 
   return (
     <header className="flex p-2 sm:px-10 items-center min-h-[5rem] gap-1 bg-surface-light dark:bg-surface-dark sticky border-b border-neutral-200 dark:border-neutral-600 top-0 z-20">
@@ -44,12 +41,12 @@ export default function Header() {
       </Link>
       <div className="flex-1 flex justify-end items-center text-center gap-5">
         <button
-          onClick={toggleLanguage}
+          onClick={handleToggleLanguage}
           className="hover:opacity-50"
           aria-label="Change page language"
         >
           <span className="text-onSurface-light dark:text-onSurface-dark font-bold text-[1rem]">
-            {i18n.language == "pt" ? "PT" : "EN"}
+            {i18n.language === "pt" ? "PT" : "EN"}
           </span>
           <Translate className="text-onSurface-light dark:text-onSurface-dark m-1" />
         </button>
