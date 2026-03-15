@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { BASENAME } from "../constants";
 
 export default function ErrorBoundaryContainer() {
   const { t } = useTranslation();
@@ -25,7 +24,7 @@ export default function ErrorBoundaryContainer() {
             <span
               className="text-primary-light underline hover:opacity-50 cursor-pointer"
               onClick={() => {
-                window.location.href = BASENAME;
+                window.location.href = "/";
               }}
             >
               {t("PAGE_NOT_FOUND.HERE")}
