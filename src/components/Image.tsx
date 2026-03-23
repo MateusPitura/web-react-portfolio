@@ -44,6 +44,7 @@ export default function Image({
         width={width}
         loading={loading}
         onLoad={() => setLoaded(true)}
+        data-analytics={`Image ${alt}`}
       />
     </div>
   );

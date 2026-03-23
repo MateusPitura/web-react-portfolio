@@ -39,6 +39,7 @@ function Education() {
                 href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=242824DE92C9BF48FB7AD5C8088F0C0544F24D67547EDECCA14C06892060CAB4"
                 target="_blank"
                 className="hover:opacity-50 hover:text-onSecondary-light underline text-onSecondary-light"
+                data-analytics="OCI certificate"
               >
                 OCI Foundations Associate
               </a>

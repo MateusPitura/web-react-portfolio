@@ -18,8 +18,8 @@
       content="
       default-src 'self'; 
       img-src 'self' data:;
-      script-src 'self' 'unsafe-inline';
-      connect-src 'self' firestore.googleapis.com firebasestorage.googleapis.com;
+      script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+      connect-src 'self';
       style-src 'self' 'unsafe-inline';
       font-src 'self' data:;
     "
@@ -56,6 +56,7 @@
         }
       })(window.location);
     </script>
+    <script src="https://cdn.jsdelivr.net/gh/MateusPitura/traffic-analytics@latest/script/dist/analytics.js" async></script>
   </head>
   <body style="margin: 0">
     <div id="root">

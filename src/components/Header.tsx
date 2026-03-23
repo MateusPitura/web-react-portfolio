@@ -44,6 +44,7 @@ export default function Header() {
           onClick={handleToggleLanguage}
           className="hover:opacity-50"
           aria-label="Change page language"
+          data-analytics="Toggle language"
         >
           <span className="text-onSurface-light dark:text-onSurface-dark font-bold text-[1rem]">
             {i18n.language === "pt" ? "PT" : "EN"}
@@ -54,6 +55,7 @@ export default function Header() {
           aria-label="LightMode change"
           onClick={toggleIsDarkMode}
           className="hover:opacity-50"
+          data-analytics="Toggle theme"
         >
           {isDarkMode ? (
             <LightMode className="text-onSurface-light dark:text-onSurface-dark m-1" />
