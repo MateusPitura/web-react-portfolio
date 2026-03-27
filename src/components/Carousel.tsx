@@ -27,10 +27,12 @@ export default function Carousel({ items }: CarouselProperties) {
     <>
       <div className="flex justify-between items-center">
         <button
-          onClick={before}
+          onClick={() => {
+            before()
+            window.analytics?.addEvent?.("Carousel previous");
+          }}
           className="text-onPrimary-light hover:opacity-50 h-fit p-1 hidden sm:block"
           aria-label="Previous carousel item"
-          data-analytics="Carousel previous"
         >
           <NavigateBeforeIcon color="inherit" />
         </button>
@@ -48,10 +50,12 @@ export default function Carousel({ items }: CarouselProperties) {
           </div>
         </div>
         <button
-          onClick={next}
+          onClick={() => {
+            next()
+            window.analytics?.addEvent?.("Carousel next");
+          }}
           className="text-onPrimary-light hover:opacity-50 h-fit p-1 hidden sm:block"
           aria-label="Next carousel item"
-          data-analytics="Carousel next"
         >
           <NavigateNextIcon color="inherit" />
         </button>
@@ -60,6 +64,7 @@ export default function Carousel({ items }: CarouselProperties) {
         {items.map((_, i) => (
           <div
             onClick={() => {
+              window.analytics?.addEvent?.("Carousel index");
               setCarouselIndex(i);
             }}
             key={i}

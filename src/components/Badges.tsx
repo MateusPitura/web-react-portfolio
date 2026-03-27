@@ -1,6 +1,6 @@
+import classNames from "classnames";
 import { useState } from "react";
 import { Badge } from "../types/Badge";
-import classNames from "classnames";
 
 interface BadgesProperties {
   badge: Badge;
@@ -18,6 +18,7 @@ function Badges({ badge }: BadgesProperties) {
         id={badge.reference}
         src={badge.imageUrl}
         alt={`Stack ${badge.reference}`}
+        data-analytics={`Stack ${badge.reference}`}
         className={classNames(
           "rounded-md w-full h-full object-cover transition-opacity duration-500",
           {

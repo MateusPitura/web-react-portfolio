@@ -22,7 +22,7 @@ function CardProject({
   return (
     <div className="flex justify-center">
       <div className="flex bg-surface-light dark:bg-surface-dark w-[56.25rem] rounded-lg justify-center shadow-lg mx-2">
-        <a className="hover:opacity-50 p-3 sm:p-5" href={link} target="_blank">
+        <a className="hover:opacity-50 p-3 sm:p-5" href={link} target="_blank" data-analytics={`Project ${title}`}>
           <div>
             <div className="w-full">
               {src && (

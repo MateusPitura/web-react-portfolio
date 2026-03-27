@@ -35,7 +35,7 @@ export default function Footer() {
             <button
               className="text-primary-light underline hover:opacity-50"
               onClick={() => handleNavigate("/terms")}
-              data-analytic="Terms"
+              data-analytics="Terms"
             >
               {t("FOOTER.TERMS")}
             </button>
@@ -44,7 +44,7 @@ export default function Footer() {
             <button
               className="text-primary-light underline hover:opacity-50"
               onClick={() => handleNavigate("/privacypolicy")}
-              data-analytic="Privacy policy"
+              data-analytics="Privacy policy"
             >
               {t("FOOTER.PRIVACYPOLICY")}
             </button>

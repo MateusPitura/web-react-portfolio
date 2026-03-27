@@ -70,7 +70,6 @@ function CardStack({
                   }
                   scrollToElement(item.reference);
                 }}
-                data-analytics={`Stack ${item.reference}`}
               >
                 <div className="w-full flex flex-wrap gap-1">
                   {index == stacksLastIndex && isTooltipOpen ? (

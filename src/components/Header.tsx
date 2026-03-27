@@ -41,10 +41,12 @@ export default function Header() {
       </Link>
       <div className="flex-1 flex justify-end items-center text-center gap-5">
         <button
-          onClick={handleToggleLanguage}
+          onClick={() => {
+            handleToggleLanguage()
+            window.analytics?.addEvent?.('Toggle language')
+          }}
           className="hover:opacity-50"
           aria-label="Change page language"
-          data-analytics="Toggle language"
         >
           <span className="text-onSurface-light dark:text-onSurface-dark font-bold text-[1rem]">
             {i18n.language === "pt" ? "PT" : "EN"}
@@ -53,9 +55,11 @@ export default function Header() {
         </button>
         <button
           aria-label="LightMode change"
-          onClick={toggleIsDarkMode}
+          onClick={() => {
+            toggleIsDarkMode()
+            window.analytics?.addEvent?.('Toggle theme')
+          }}
           className="hover:opacity-50"
-          data-analytics="Toggle theme"
         >
           {isDarkMode ? (
             <LightMode className="text-onSurface-light dark:text-onSurface-dark m-1" />
