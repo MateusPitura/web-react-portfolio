@@ -28,7 +28,7 @@ Bem-vindo ao meu portfólio! Este projeto foi criado para exibir meus trabalhos,
 
 ## Como executar 
 
-Acesse o site https://mateuspitura.github.io/web-react-portfolio/
+Acesse o site [https://mateuspitura.com](https://mateuspitura.com?utm_id=CROSVW)
 
 ## Tecnologias usadas 
 
